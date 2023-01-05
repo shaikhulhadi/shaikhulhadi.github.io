@@ -37,7 +37,7 @@ language_translation_offer_slide: slideBoxTopToDown
 
 # this uses lng.code + lng.country defined in _data/lang/[language].yml
 # ex; false: en, true: en-US
-html_lng_with_country_code: true
+html_lng_with_country_code: false
 
 # this adds hover effect to language switch
 language_switch_hover_effect: "hover-effect"
