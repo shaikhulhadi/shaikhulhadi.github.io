@@ -65,4 +65,4 @@ layout: default
 
 {% include home/qoutation.html %}
 
-# {%- include home/short_introduction.html%-} 
+ {% include home/short_introduction.html %} 
