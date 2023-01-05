@@ -49,7 +49,7 @@ meta_common_description: "Your meta description."
 # comment to remove any contact item
 contacts:
   - github: "https://github.com/shaikhulhadi"
-  #- email: ""
+  - email: "shaikhulhadi@knights.ucf.edu"
   - linkedin: "linkedin.com/in/shaikhulhadi"
   #- twitter: ""
   #- mastodon: ""
