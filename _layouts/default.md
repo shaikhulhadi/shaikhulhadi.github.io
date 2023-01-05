@@ -28,7 +28,7 @@ layout: util/compress
 <!DOCTYPE html>
 <html lang="{{ lng_code }}">
   <head>
-    {% include default/header/header.html %}
+    <!-- {% include default/header/header.html %} -->
     {% include default/css-include.html %}
   </head>
 
