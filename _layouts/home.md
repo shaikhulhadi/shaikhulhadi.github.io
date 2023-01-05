@@ -63,6 +63,6 @@ layout: default
 {% endif -%} -->
 
 
-{% includes home/qoutation.html%}
+{% include home/qoutation.html %}
 
-{% includes home/short_introduction.html%}
+<!-- {%- include home/short_introduction.html%-} -->
