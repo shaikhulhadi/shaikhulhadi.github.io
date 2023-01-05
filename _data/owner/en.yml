@@ -24,9 +24,8 @@ home:
 
 # about page sub title
 about:
-  sub_title: |
-    PhD Student at University of Central Florida (UCF)  
-    Research Assistant at ARPERS Research Group, UCF
+  sub_title: "PhD Student at University of Central Florida (UCF) \nResearch Assistant at ARPERS Research Group, UCF"
+    
   #"$site_sample"
 
 # if you don't want to add copyright year, comment or leave it blank.
