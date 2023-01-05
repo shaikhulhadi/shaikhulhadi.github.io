@@ -62,7 +62,12 @@ layout: default
 </div>
 {% endif -%} -->
 
+<div>
+    
+<div>
+  {% include home/qoutation.html %}
+</div>
 
-{% include home/qoutation.html %}
-
+<div>
  {% include home/short_introduction.html %} 
+ </div>
