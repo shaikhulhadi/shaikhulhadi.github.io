@@ -1,8 +1,4 @@
-{%-comment-%}
-  Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
-  Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
-  Licensed under MIT
-{%-endcomment-%}
+
 
 <nav id="side-nav-container">
   <div class="side-nav">
@@ -13,7 +9,7 @@
       {% endif -%}
       <div class="brand-holder">
         {% if site.data.conf.main.side_nav_brand_text_enable -%}
-          <a href="{{ site.baseurl }}{{ layout_page_obj.url }}" translate="no">{{ site.data.owner[lng].brand }}</a>
+          <!-- <a href="{{ site.baseurl }}{{ layout_page_obj.url }}" translate="no">{{ site.data.owner[lng].brand }}</a> -->
         {% endif -%}
       </div>
       <p>&nbsp;{{ site.data.owner[lng].brand_sub_text | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample }}</p>
