@@ -28,7 +28,7 @@ layout: util/compress
 <!DOCTYPE html>
 <html lang="{{ lng_code }}">
   <head>
-    <!-- {% include default/header/header.html %} -->
+    {% include default/header/header.html %}
     {% include default/css-include.html %}
   </head>
 
@@ -36,8 +36,8 @@ layout: util/compress
     {% if color_scheme_enabled -%}
       <script src="{{ site.baseurl }}/assets/js/color-scheme-attr-init.js" data-mode="{{ site.data.conf.main.color_scheme_default_dark }}"></script>
     {%- endif %}
-    {% include default/nav/navigation-top-nav.html -%}
-    {% include default/nav/navigation-side-nav.html -%}
+    <!-- {% include default/nav/navigation-top-nav.html -%} -->
+    <!-- {% include default/nav/navigation-side-nav.html -%} -->
     {% if site.data.conf.posts.post_table_of_contents and page.layout == "post"-%}
       {%- include post/table-of-contents.html -%}
     {%- endif -%}
