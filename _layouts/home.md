@@ -6,7 +6,7 @@
 layout: default
 # main page (index.html)
 ---
-{%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%} -->
+<!-- {%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%} --> -->
 
 {%- if page.img %}
   {%- if site.data.conf.others.home.header_img_with_img_tag == true -%}
