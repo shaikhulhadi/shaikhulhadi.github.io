@@ -63,6 +63,8 @@ layout: default
 {% endif -%} -->
 
 
+
+<div>
 <style>
   div {
     border: 1px solid black;
@@ -72,14 +74,14 @@ layout: default
     font-size: 12pt;
   }
 </style>
-
-<div>
   <p> <i>"No sensible decision can be made any longer without taking into account not only the world as it is, but the world as it will be." -- Isaac Asimov</i> </p>
 </div>
 
 
 
 
+
+<div>
 <style>
   div {
     background-color: lightgray;
@@ -90,8 +92,6 @@ layout: default
     font-size: 12pt;
   }
 </style>
-
-<div>
   <p>Hi, I'm Khan Shaikhul Hadi . I'm a PhD student of University of Central Florida and working as a Research Assistant at ARPERS research group. I do research in <strong>Computer Architecture</strong> and my current research focus is <i>Crash consistency for parallel programming on persistent memory machine</i>.
    I have worked as a Research Engineer at BUET-Energypac Research Collaboration HEQEP Sub-Project CP#381. I have completed my B.Sc in Electrical and Electronic Engineering from Bangladesh University of Engineering and  Technology (BUET) . </p>
 </div>
