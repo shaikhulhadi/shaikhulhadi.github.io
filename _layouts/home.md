@@ -64,12 +64,11 @@ layout: default
 </div>
 {% endif -%} -->
 
-<div>
     
-<div>
+<div class="multipurpose-container new-posts-container">
   {% include home/qoutation.html %}
 </div>
 
-<div>
+<div class="multipurpose-container new-posts-container">
  {% include home/short_introduction.html %} 
  </div>
