@@ -69,6 +69,7 @@ layout: default
   {% include home/qoutation.html %}
 </div>
 
-<div class="home-intro-text markdown-style">
+<div>
+<!-- <div class="home-intro-text markdown-style"> -->
  {% include home/short_introduction.html %} 
 </div>
