@@ -6,16 +6,16 @@
 layout: default
 # main page (index.html)
 ---
-<!-- {%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%} -->
+{%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%} -->
 
-<!-- {%- if page.img %}
+{%- if page.img %}
   {%- if site.data.conf.others.home.header_img_with_img_tag == true -%}
     {%- capture home_img_tag -%} <img src="{{ page.img }}" /> {%- endcapture -%}
     {%- capture home_img_background_style -%} style="height: unset;" {%- endcapture -%}
   {% else %}
     {%- capture home_img_background_style -%} style="background-image:url('{{ page.img }}');" {%- endcapture -%}
   {%- endif -%}
-{%- endif -%} -->
+{%- endif -%}
 
 <div class="multipurpose-container home-heading-container">
   <div class="home-heading" {{ home_img_background_style }}>
@@ -36,7 +36,7 @@ layout: default
     </div>
   </div>
   <div class="home-intro-text markdown-style">
-    <!-- {{ content }} -->
+    This website is on development. It's in chaos right now.
   </div>
 </div>
 
