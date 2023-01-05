@@ -46,7 +46,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="about-msg markdown-style">
-        {{% include about/position.html %}}
+        {% include about/position.html %}
         {%- if site.data.conf.main.contact_form.enable and site.data.conf.others.about.show_contact_form_button %}
           <a href="javascript:void(0);" class="btn-base " onclick="ContactForm.show();" role="button">{{ site.data.lang[lng].contact_form.button_name }}</a>
         {% endif -%}
