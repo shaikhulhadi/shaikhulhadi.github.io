@@ -44,7 +44,7 @@ layout: default
     <hr>
   </div>
   
-  <div class="multipurpose-container about-container">
+  <div class="meta-container">
     {% include about/resume_download.html%}
   </div>
 
