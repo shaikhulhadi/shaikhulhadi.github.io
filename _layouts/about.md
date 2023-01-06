@@ -43,6 +43,11 @@ layout: default
   <div class="row about-divider">
     <hr>
   </div>
+  
+  <div class="multipurpose-container about-container">
+    {% include about/resume_download.html%}
+  </div>
+
   <div class="row">
     <div class="col-md-12">
       <div class="about-msg markdown-style">
@@ -55,6 +60,3 @@ layout: default
   </div>
 </div>
 
-<div class="multipurpose-container about-container">
-  {% include about/resume_download.html%}
-</div>
