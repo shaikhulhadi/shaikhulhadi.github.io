@@ -53,5 +53,8 @@ layout: default
       </div>
     </div>
   </div>
-  {%include about/resume_download.html%}
+</div>
+
+<div class="multipurpose-container about-container">
+  {% include about/resume_download.html%}
 </div>
