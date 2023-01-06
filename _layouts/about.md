@@ -53,5 +53,5 @@ layout: default
       </div>
     </div>
   </div>
-  {%include resume_download.html%}
+  {%include about/resume_download.html%}
 </div>
