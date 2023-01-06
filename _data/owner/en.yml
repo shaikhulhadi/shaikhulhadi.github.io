@@ -4,8 +4,9 @@
 # This is your brand name
 brand: "Khan Shaikhul Hadi"
 
+
 # text below the brand name
-brand_sub_text: "$site_sample"
+brand_sub_text: "PhD Student of  UCF <br> Research Assistant of ARPERS Research Group"
 
 # used for seo meta post author (if it's not defined in post)
 name: "Shaikhul"
@@ -19,7 +20,9 @@ home:
 
 # about page sub title
 about:
-  sub_title: "$site_sample"
+  sub_title: 
+    
+  #"$site_sample"
 
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
@@ -48,10 +51,10 @@ meta_common_description: "Your meta description."
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: ""
-  #- email: ""
-  #- linkedin: ""
-  #- twitter: ""
+  - github: "shaikhulhadi" #https://github.com/
+  - email: "shaikhulhadi@knights.ucf.edu"
+  - linkedin: "shaikhulhadi" #https://www.linkedin.com/in/
+  - twitter: "Anklon137" #https://twitter.com/
   #- mastodon: ""
   #- instagram: ""
   #- youtube: ""

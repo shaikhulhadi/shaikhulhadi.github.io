@@ -25,7 +25,7 @@ language_switch_lang_list: [en]
 
 # if the opened page is not in the user's language list,
 # suggest language(s) matching with the one(s) in browser language list and user language list.
-language_translation_offer_box: true
+language_translation_offer_box: false
 
 # Disable 3rd party translation suggestion for pages with translation.
 language_translation_offer_disable_ext_translation: true
@@ -62,7 +62,7 @@ sample_replace: "$site_sample"
 ###########################################################
 # to enable search feature, set to true
 # if you disable this feature, you don't need search.json file so please open the file and uncomment the "published: false"
-search_enable: true
+search_enable: false
 
 # if this is true, search list hides with mouse leave event
 # if this is false, search list hides with mouse click event
@@ -119,7 +119,7 @@ color_scheme_dark: true
 # this sets default color scheme to dark. (color_scheme_dark must be enabled)
 # page start will be dark color scheme. You can change color scheme using switches
 # this feature doesn't need switches.
-color_scheme_default_dark: false
+color_scheme_default_dark: true
 
 # default color will change based on browser dark color scheme (color_scheme_default_dark should be disabled.)
 # you don't need to enable this if any switch is enabled.
@@ -151,10 +151,10 @@ scroll_back_to_top_button: true
 #                Footer Text
 ###########################################################
 # this enables side navigation bar footer
-side_nav_footer: true
+side_nav_footer: false
 
 # this enables footer text to the bottom of the page
-main_footer: true
+main_footer: false
 
 # this sets footer text position to fixed positioning. Always visible.
 main_fixed_footer: true
@@ -183,14 +183,14 @@ side_nav_close_limit: 767px
 side_and_top_nav_buttons:
   - home:
     icon: "fa fa-home"
-  - post-list:
-    icon: "fa fa-pencil-square-o"
-  - archives:
-    icon: "fa fa-archive"
-  - projects:
-    icon: "fa fa-cog"
-  - links:
-    icon: "fa fa-link"
+  # - post-list:
+  #   icon: "fa fa-pencil-square-o"
+  # - archives:
+  #   icon: "fa fa-archive"
+  # - projects:
+  #   icon: "fa fa-cog"
+  # - links:
+  #   icon: "fa fa-link"
   - about:
     icon: "fa fa-user-o"
 
@@ -209,7 +209,7 @@ top_nav_brand_text_enable: true
 
 # set profile image
 # comment to disable the profile image
-side_nav_profile_img_path: /assets/img/posts/post_pic1.jpg
+side_nav_profile_img_path: /assets/img/default/shaikhul.jpg
 
 # this adds hover effect to bottom buttons
 side_nav_bottom_buttons_hover_effect: "hover-effect"
@@ -320,7 +320,7 @@ google:
 # make sure google_analytics_id is set in _data/owner/[language].yml
 # make sure your environment does not match with google.analytics.ignore
 cookie_consent:
-  enable: true
+  enable: false
   # if this is true, the consent box will be hidden even if the user does not change the switch position.
   hide_consent_bar_with_save_button: true
   gtag_default_config:

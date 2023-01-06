@@ -3,10 +3,12 @@
 # Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
 # Licensed under MIT
 
+
 layout: default
 # main page (index.html)
+# {%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
+
 ---
-{%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
 
 {%- if page.img %}
   {%- if site.data.conf.others.home.header_img_with_img_tag == true -%}
@@ -31,15 +33,16 @@ layout: default
           | replace: site.data.conf.main.brand_replace, site.data.owner[lng].brand
           | replace: site.data.conf.main.greetings_replace, site.data.lang[lng].constants.greetings
           | replace: site.data.conf.main.welcome_replace, site.data.lang[lng].constants.welcome }}
+          
       {% endif -%}
     </div>
   </div>
   <div class="home-intro-text markdown-style">
-    {{ content }}
+    This website is under development. 
   </div>
 </div>
 
-{%- if lng_pages.size > 0 and site.data.conf.others.home.new_posts %}
+<!-- {%- if lng_pages.size > 0 and site.data.conf.others.home.new_posts %}
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_posts_title }}</h1>
   <ul class="new-posts">
@@ -59,4 +62,16 @@ layout: default
     </li>
   </ul>
 </div>
-{% endif -%}
+{% endif -%} -->
+
+    
+<div >
+  {% include home/qoutation.html %}
+</div>
+
+<div class="multipurpose-container new-posts-container">
+<div>
+<!-- <div class="home-intro-text markdown-style"> -->
+ {% include home/short_introduction.html %} 
+</div>
+</div>

@@ -11,7 +11,7 @@ layout: default
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
-      <img src="{{ page.img }}" alt="">
+      <img src="{{ site.baseurl }}{{ site.data.conf.main.side_nav_profile_img_path }}" alt="">
     </div>
     <div class="col-md-9 about-header">
       <h1 translate="no">{{ site.data.owner[lng].brand }}</h1>
@@ -43,10 +43,15 @@ layout: default
   <div class="row about-divider">
     <hr>
   </div>
+  
+  <div>
+    {% include about/resume_download.html%}
+  </div>
+
   <div class="row">
     <div class="col-md-12">
       <div class="about-msg markdown-style">
-        {{ content }}
+        {% include about/position.html %}
         {%- if site.data.conf.main.contact_form.enable and site.data.conf.others.about.show_contact_form_button %}
           <a href="javascript:void(0);" class="btn-base " onclick="ContactForm.show();" role="button">{{ site.data.lang[lng].contact_form.button_name }}</a>
         {% endif -%}
@@ -54,3 +59,4 @@ layout: default
     </div>
   </div>
 </div>
+

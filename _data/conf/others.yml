@@ -2,7 +2,7 @@
 
 home:
   # enables new posts
-  new_posts: true
+  new_posts: flase
   # to remove limit, please comment it
   new_posts_count_limit: 3
   # header image using img tag with different scaling.
