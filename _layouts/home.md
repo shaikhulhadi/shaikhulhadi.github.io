@@ -38,7 +38,7 @@ layout: default
     </div>
   </div>
   <div class="home-intro-text markdown-style">
-    This website is on development. It's in chaos right now.
+    This website is on development. 
   </div>
 </div>
 
