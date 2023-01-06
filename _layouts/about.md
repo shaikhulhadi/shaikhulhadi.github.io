@@ -11,7 +11,7 @@ layout: default
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
-      <img src="{{ page.img }}" alt="">
+      <img src="{{  }}" alt="">
     </div>
     <div class="col-md-9 about-header">
       <h1 translate="no">{{ site.data.owner[lng].brand }}</h1>
