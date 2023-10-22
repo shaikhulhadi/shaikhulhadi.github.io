@@ -7,10 +7,10 @@
 {%-comment-%} out: website_info_text, website_info_text_first, website_info_text_second, page_title_text {%-endcomment-%}
 
 {%- include multi_lng/get-lng-by-url.liquid -%}
-{%- assign lng = get_lng -%}
+{%- assign lng = "en" -%}
 
 {%- assign readme_lng = lng -%}
-{%- if lng != "en" and lng != "ja" and lng != "pt"%}{%- assign readme_lng = "en" -%}{%-endif-%}
+{% comment %} {%- if lng != "en" and lng != "ja" and lng != "pt"%}{%- assign readme_lng = "en" -%}{%-endif-%} {% endcomment %}
 
 {% include multi_lng/get-page-by-lng-pair-and-lng.liquid lng_pair="id_Mr_Green_Jekyll_Theme" layout="post" lng=readme_lng -%}
 

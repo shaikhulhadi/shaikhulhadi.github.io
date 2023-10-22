@@ -6,7 +6,7 @@ home:
   # to remove limit, please comment it
   new_posts_count_limit: 3
   # header image using img tag with different scaling.
-  header_img_with_img_tag: false
+  header_img_with_img_tag: flase
 
 ######################### About ###########################
 
@@ -34,3 +34,10 @@ links:
 projects:
   # if no picture is provided for projects list item, this fills with an empty picture for better look.
   project_img_fill: true
+
+######################### publication ###########################
+
+publication:
+  # if no picture is provided for publication list item, this fills with an empty picture for better look.
+  project_img_fill: false
+
