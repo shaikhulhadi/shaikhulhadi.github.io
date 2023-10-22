@@ -135,11 +135,6 @@ home:
   new_posts_title: New Articles
   new_posts_show_more_button: View More ...
 
-# for archives layout
-archives:
-  title: Archive
-  button_name: Archive
-  page_header: Archive
 
 # for about layout
 about:
@@ -149,10 +144,16 @@ about:
 
 # for links layout
 links:
-  title: Links
-  button_name: Links
+  title: link
+  button_name: link
   link_text: Web site
   info_text: Info
+
+# for archives layout
+archives:
+  title: Archive
+  button_name: Archive
+  page_header: Archive
 
 # for projects layout
 projects:
@@ -160,6 +161,15 @@ projects:
   button_name: Projects
   read_more_text: Read more
   read_less_text: Read less
+
+
+# for publications layout
+publication:
+  title: publication
+  button_name: Publications
+  link_text: Web site
+  info_text: Info
+
 
 # for privacy-policy layout
 privacy-policy:

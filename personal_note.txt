@@ -10,3 +10,17 @@ Shaikhul : Personal note on how to open and run this template file in local ubun
 ////////////////////////////////////////////////////////////////////////////
 Directory meaning
 //////////////////////////////////////////////////////////////////////
+
+main.yml    
+    - main description file
+    - side_and_top_nav_buttons : what are the pages we will have 
+
+
+////////////////////////////////////////
+Update Publication ( publication.md)
+////////////////////////////////////
+Follow list format to add: type, title, authors, conference,year,url, summary
+
+Note:
+ _layout/publication.md has html code that read above mentioned file and print as web page. 
+ To change format or design of publication page, modify this page
