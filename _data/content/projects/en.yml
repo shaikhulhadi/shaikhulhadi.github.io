@@ -2,231 +2,132 @@
 ###########################################################
 #                Projects Page Data
 ###########################################################
-page_data:
+research_project:
   main:
-    header: "Publications & Projects"
-    info: "Your Project page description."
+    header: "Research Project"
+    info: Projects I worked on as an Research Engineer
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
-    img: ":projects-heading.jpg"
-    back_color: "lightblue"
-
-  category:
-    - title: "Example"
-      type: id_example
-      color: "gray"
-    - title: "Picture"
-      type: id_picture
-      color: "#62b462"
-    - title: "Quote"
-      type: id_quote
-      color: "#2FD0ED"
+    # img: ":projects-heading.jpg"
+    back_color: "light-gray"
 
   list:
-    # example
-    - type: id_example
-      project_name: "Example Project"
-      project_excerpt: "Examples"
-      img: ":project1_thumb.jpg"
-      img_title: "img title1"
-      date: "2021-03-13"
+    - type: id_led
+      project_name: "BUET LED Driver Controller Digital IC"
+      project_excerpt: "First iteration was fabricated on June 2018"
+      img: ":led_driver.webp"
+      img_title: "BUET LED Driver Controller Digital IC"
+      # git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
+      # date: "2021-03-13"
       post: |
-        # Examples
-
-        This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
-
-        ### Headings (centered)
-        {:data-align="center"}
-
-        # Heading 1
-
-        ## Heading 2
-
-        ### Heading 3
-
-        #### Heading 4
-
-        ##### Heading 5
-
-        ###### Heading 6
-
-        ***
-
-        ### Paragraphs
-
-        #### Paragraph
-
-        **William Shakespeare**, Let me not to the marriage of true minds
-        Admit impediments. Love is not love
-        Which alters when it alteration finds,
-        Or bends with the remover to remove.
-        O no, it is an ever-fixed mark
-        That looks on tempests and is never shaken;
-        It is the star to every wand'ring barque,
-        Whose worth's unknown, although his height be taken.
-        Love's not Time's fool, though rosy lips and cheeks
-        Within his bending sickle's compass come;
-        Love alters not with his brief hours and weeks,
-        But bears it out even to the edge of doom.
-        If this be error and upon me proved,
-        I never writ, nor no man ever loved.
-
-        #### Texts
-
-        Quoted text `Hello world`
-
-        Bold text **Hello world**
-
-        Italic text _Hello world_
-
-        kbd text <kbd>Hello world</kbd>
-
-        #### Blockquote
-
-        > **William Shakespeare**, Let me not to the marriage of true minds
-        Admit impediments. Love is not love
-        Which alters when it alteration finds,
-        Or bends with the remover to remove.
-        O no, it is an ever-fixed mark
-        That looks on tempests and is never shaken;
-        It is the star to every wand'ring barque,
-        Whose worth's unknown, although his height be taken.
-        Love's not Time's fool, though rosy lips and cheeks
-        Within his bending sickle's compass come;
-        Love alters not with his brief hours and weeks,
-        But bears it out even to the edge of doom.
-        If this be error and upon me proved,
-        I never writ, nor no man ever loved.
-
-        ### Link
-
-        This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), a simple theme built for [Jekyll](https://jekyllrb.com/).
-
-        ### Picture
-
-        ![such a lovely place](:projects-heading.jpg)
-
-        ### Picture (centered)
-
-        ![such a lovely place](:project1_thumb.jpg){:data-align="center"}
-
-        ### Lists
-
-        - Apple
-        - Banana
-        - Orange
-
-        1. Fruits
-            1. Apples
-                - Granny Smith
-                - Mutsu
-            1. Bananas
-                - Cavendish
-                - Red
-        1. Vegetables
-
-        ***
-
-        ### Tables
-
-        #### Small Table (centered)
-
-        | Fruits(not aligned) | Alignment (centered) | num (right align) |
-        | ------------------- | :------------------: | ----------------: |
-        | Apple               |       centered       |              9999 |
-        | Banana              |  centered long text  |               999 |
-        | Orange              |       centered       |                99 |
-        | Lemon               |       centered       |                 9 |
-        {:data-align="center"}
-
-        #### Wide Table (centered)
-
-        scroll enabled when page is narrow
-
-        | Fruits | num (left align) | num (right align) | num  | num  | num  |
-        | ------ | :--------------- | ----------------: | ---- | ---- | ---- |
-        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 |
-        | Banana | 111              |               111 | 222  | 333  | 444  |
-        | Orange | 11               |                11 | 22   | 33   | 44   |
-        | Lemon  | 1                |                 1 | 2    | 3    | 4    |
-        {:data-align="center"}
-
-        #### Wider Table
-
-        scroll enabled when page is narrow
-
-        | Fruits | num (left align) | num (right align) | num  | num  | num  | num  | num  | num  |
-        | ------ | :--------------- | ----------------: | ---- | ---- | ---- | ---- | ---- | ---- |
-        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 | 5555 | 6666 | 7777 |
-        | Banana | 111              |               111 | 222  | 333  | 444  | 555  | 666  | 777  |
-        | Orange | 11               |                11 | 22   | 33   | 44   | 55   | 66   | 77   |
-        | Lemon  | 1                |                 1 | 2    | 3    | 4    | 5    | 6    | 7    |
-
-        ### Code
-
-        #### Quote
-
-        ```python
-        for i in range(5, 10):
-          print(i)
-        ```
-
-    # picture
-    - type: id_picture
-      project_name: "Example Project"
-      project_excerpt: "Picture"
-      img: ":project2_thumb.jpg"
-      img_title: "img title2"
-      date: "2021-04-23"
+        Under BUET-Energypac Research Collaboration HEQEP Sub-Project CP#3817 , We worked on designing a Digital 
+        Controller IC for LED driver circuit. Purpose of this IC is to replace Analog controller circuit in Boost
+        controller to increase longevity and reduce cost of LED driver circuit for Solar Home System use.
+        
+        180nm technology based BUET VLSI standard cell library is used for this design. A hybrid architecture is
+        followed. First spin fabrication is completed and testing bring out some mismatch issues with IO pad provided by Europractice IC service.
+        Next step modification includes designing own IO pad . There is also some scope to improve clock speed, high resolution ADC design and DFT implementation.
+    
+    - type: id_standard_cell
+      project_name: "BUET VLSI Standard Cell Library"
+      project_excerpt: "Standard Cell Library Design and Characterization based on TSMC 180nm"
+      img: ":standard_cell.webp"
+      img_title: "2 input NAND gate"
       post: |
-        # Title
-        This is project content.
+        TSMC 180nm technology based 7 track standard cells.
 
-        ![Image](:project2_thumb.jpg)
+        This cell library contains 5o standard cells which can be used to design
+        full digital circuits. It also contains three special analog cells for mix-signal 
+        design purpose. This cells are used to design BUET LED driver controller circuit.
+        
+        All standard cell designs are characterized using Liberate and Abstract Generator of Cadence.
 
-    # quote
-    - type: id_quote
-      project_name: "Example Project"
-      project_excerpt: "William Shakespeare"
-      #img: ":project1_thumb.jpg"
-      #img_title: "img title3"
-      date: "2021-05-27"
+
+
+academic_project:
+  main:
+    header: "Academic Projects"
+    info: "Academic projects I have worked on during both my undergraduate and graduate studies"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    # img: ":projects-heading.jpg"
+    back_color: "light-gray"
+
+
+  list:
+    - type: id_8bit_sap
+      project_name: "8 bit Specialized SAP Microprocessor "
+      img: ":8_bit_sap.webp"
+      img_title: "8 Bit Specialized SAP Microprocessor Block Diagram"
+      # git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
+      # date: "2021-03-13"
       post: |
-        Let me not to the marriage of true minds
-        Admit impediments. Love is not love
-        Which alters when it alteration finds,
-        Or bends with the remover to remove.
-        O no, it is an ever-fixed mark
-        That looks on tempests and is never shaken;
-        It is the star to every wand'ring barque,
-        Whose worth's unknown, although his height be taken.
-        Love's not Time's fool, though rosy lips and cheeks
-        Within his bending sickle's compass come;
-        Love alters not with his brief hours and weeks,
-        But bears it out even to the edge of doom.
-        If this be error and upon me proved,
-        I never writ, nor no man ever loved.
-    - type: id_quote
-      project_name: "Example Project"
-      project_excerpt: "Albert Einstein"
-      img: ":project2_thumb.jpg"
-      img_title: "img title4"
-      date: "2021-06-08"
+        8 bit register microprocessor with 64Kbit memory capability, designed in Proteus simulation software. 
+        This was single bus architecture processor to perform basic SAP2 microprocessor 
+        commands along with PUSH and POP function (in total 16 instruction set predetermined by instructor). 
+        Temporary register was optimized and ideal cycle of IR was utilized as temporary memory 
+        element. 
+        
+        To provide user easy way to insert instruction code, A compiler was also designed in C++
+        to convert assembly code to hex output to upload in simulated memory.
+
+    - type: id_sentiment
+      project_name: "Sentiment analysis of stocks from financial-news headline with twitter feedback"
+      # project_excerpt: "First iteration was fabricated on June 2018"
+      img: ":SentimentAnalysis.JPG"
+      img_title: "Sentiment Analysis of Meta Platforms, Inc. (META) based on financial news headline and
+tweets"
+      git_hub: "https://github.com/shaikhulhadi/Sentiment-Analysis-of-Stocks-from-financial-news-headline-with-twitter-feedback"
+      # date: "2021-03-13"
       post: |
-        Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
-    - type: id_quote
-      project_name: "Example Project"
-      project_excerpt: "Mae West"
-      img: ":project1_thumb.jpg"
-      img_title: "img title5"
-      date: "2021-08-20"
+        Here I analyzed public sentiment for a company stock based on relevant news headlines using Natural Language 
+        Toolkit (nltk) library. For each headline, relevant tweets also collected and analyzed for public sentiment 
+        to re-evaluate overall public sentiment towards the stock. Due to significant adoption of social media, how each 
+        headline is accepted in social media and how viral it become may give us more accurate public sentiment analysis 
+        of a particular stock.
+
+    - type: id_load_flow
+      project_name: "Load-flow analysis tool"
+      # project_excerpt: "First iteration was fabricated on June 2018"
+      img: ":load_flow.webp"
+      img_title: "Load Flow Analysys Tool Interface"
+      git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
+      # date: "2021-03-13"
       post: |
-        You only live once, but if you do it right, once is enough.
-    - type: id_quote
-      project_name: "Example Project"
-      project_excerpt: "Mahatma Gandhi "
-      img: ":project2_thumb.jpg"
-      img_title: "img title6"
-      date: "2021-12-20"
+        MATLAB based Gauss-seidel load flow analysis tool with MATLAB GUI user interface to analyze requred power sourc
+        insertion at certain point of power grid and could analyze up to 100 power grid bus.
+
+    - type: id_smart_traffic
+      project_name: "Statistical data based smart traffic control system"
       post: |
-        Be the change that you wish to see in the world.
+        This traffic control system perform real time traffic data analysis for traffic predictability and
+        cell based design for ease of installation for developing and underdeveloped country. Each cell ( traffic intersection)
+        is desinged to work independently while communicationg nearby cell for more efficiant prediction. Emergency transport prioritization
+        was also implemented.
+
+    - type: id_alu
+      project_name: "4-Bit Arithmetic Logic Unit Design with Shifter"
+      project_excerpt: "First iteration was fabricated on June 2018"
+      img: ":4_bit_ALU.webp"
+      img_title: "Single Bit Adder of the LU"
+      # git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
+      # date: "2021-03-13"
+      post: |
+        This is a asynchronous arithmetic logic unit bit wise design using Cadence Design Suite . 
+        This circuit could perform 12 predefined opcode based operation both logical and arithmetical. 
+        Total design required only 502 MOSFET as  one of the major concern was to optimized design area.  
+        Total layout have to be designed manually as requirement.
+
+    - type: id_perkinson
+      project_name: "High-Accuracy Detection of Early Parkinson's Disease through Multimodal Features and Machine Learning"
+      img: ":perkinsons.webp"
+      img_title: "Difference between normal and abnormal brain image"
+      post: |
+        This was a reproduction of an existing work ([High-Accuracy Detection of Early Parkinsons Disease through 
+        Multimodal Features and Machine Learning,R. Prashantha,Sumantra Dutta Roya, Pravat K. Mandal , Shantanu 
+        Ghoshd](https://www.sciencedirect.com/science/article/abs/pii/S1386505616300326?via%3Dihub)).
+        
+        Updated database was used in this recreation and nearly matched output result was found. Logistic Regression, 
+        Boosted Tree & SVM machine learning algorithm was implemented. To implement those algorithms, MATLAB 
+        Classification Learner tool was used. 
+        

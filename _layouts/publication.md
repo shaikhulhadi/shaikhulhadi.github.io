@@ -18,24 +18,24 @@ layout: default
 
 {%- if site.data.conf.others.publication.use_rows_as_link -%}{%- assign hover_class = "table-hover" -%}{%- endif -%}
 
-<div class="multipurpose-container link-container" id="id_publication" style="border-left-color:gray;">
-  <table class="table {{ hover_class }}">
+<div class="multipurpose-container link-container" id="id_publication" >
+  <table class="table {{ hover_class }}" >
     <tbody>
       {%- for list in publication_data.list %}
         {%- if site.data.conf.others.publication.use_rows_as_link -%}
           {%- capture link_onclick -%} onclick="openURL('{{ list.url }}');" style="cursor: pointer;" {%- endcapture -%}
-          {%- capture link_url -%} <b>{{ list.conference }} - {{list.year}}</b> {%- endcapture -%}
+          {%- capture link_url -%} <b>{{ list.title }}</b> {%- endcapture -%}
         {% else %}
           {%- assign link_onclick = nil -%}
-          {%- capture link_url -%} <a href="{{ list.url }}" target="_blank" rel="noopener noreferrer"><b>{{ list.conference }} - {{list.year}}</b></a> {%- endcapture -%}
+          {%- capture link_url -%} <a href="{{ list.url }}" target="_blank" rel="noopener noreferrer"><b>{{ list.title}}</b></a> {%- endcapture -%}
         {%- endif %}
-        <tr class="link-item" {{ link_onclick }}>
+        <tr class="link-item" {{ link_onclick }} >
           <td>
-            <p>{{ link_url }}</p>
+            <p style="font-weight: bold; color: light-gray"> {{ list.conference }} - {{list.year}} </p>
           </td>
           <td>
             <p>
-              <b>{{ list.title }}</b><br>
+              <b>{{ link_url }}</b><br>
               {{ list.authors }}<br>
               <i>{{ list.summary }}</i>
             </p>
