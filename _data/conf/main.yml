@@ -186,13 +186,13 @@ side_and_top_nav_buttons:
   - archives:
     icon: "fa fa-archive"
   - publication:
-    icon: "fa fa-archive"
+    icon: "fa fa-paperclip"
   - projects:
     icon: "fa fa-cog"
   - about:
     icon: "fa fa-user-o"
-  - links:
-    icon: "fa fa-link"
+  # - links:
+  #   icon: "fa fa-link"
   # - post-list:
   #   icon: "fa fa-pencil-square-o"
 
