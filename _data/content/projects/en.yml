@@ -5,7 +5,7 @@
 research_project:
   main:
     header: "Research Project"
-    info: Projects I worked on as an Research Engineer
+    info: Projects I have worked on as a Research Engineer
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     # img: ":projects-heading.jpg"
@@ -47,7 +47,7 @@ research_project:
 academic_project:
   main:
     header: "Academic Projects"
-    info: "Academic projects I have worked on during both my undergraduate and graduate studies"
+    info: "Academic projects I have worked on during my undergrad and graduate studies"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     # img: ":projects-heading.jpg"
@@ -97,6 +97,12 @@ tweets"
         MATLAB based Gauss-seidel load flow analysis tool with MATLAB GUI user interface to analyze requred power sourc
         insertion at certain point of power grid and could analyze up to 100 power grid bus.
 
+    - type: id_os
+      project_name: "Personal Operating System"
+      git_hub: "https://github.com/shaikhulhadi/PersonalOS"
+      post: |
+        Developed a personal OS from scratch to understand interaction between OS and hardware. Current version features boot-loader, interrupt handler, video driver as per requirement of instructor.
+
     - type: id_smart_traffic
       project_name: "Statistical data based smart traffic control system"
       post: |
@@ -130,4 +136,16 @@ tweets"
         Updated database was used in this recreation and nearly matched output result was found. Logistic Regression, 
         Boosted Tree & SVM machine learning algorithm was implemented. To implement those algorithms, MATLAB 
         Classification Learner tool was used. 
+
+    - type: id_tick_tack
+      project_name: "Tic Tac Toe game using 74xx series digital logci circuit"
+      # project_excerpt: "First iteration was fabricated on June 2018"
+      # img: ":load_flow.webp"
+      # img_title: "Load Flow Analysys Tool Interface"
+      git_hub: "https://github.com/shaikhulhadi/TicTacToe-Circut"
+      # date: "2021-03-13"
+      post: |
+        Tick Tac Toe game board using digital logic circuit based on 74xx series ic. This hardware has built in cheat prove
+        to double insert or delete multiple input and distinctive lighting indication system to differentiate player. Alongside simulation,
+        PCB board was designed using Proteus Design Suit.
         
