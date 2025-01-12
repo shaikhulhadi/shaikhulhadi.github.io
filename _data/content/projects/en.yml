@@ -2,6 +2,7 @@
 ###########################################################
 #                Projects Page Data
 ###########################################################
+temp_base_url: data[base_url]
 research_project:
   main:
     header: "Research Project"
@@ -17,8 +18,6 @@ research_project:
       project_excerpt: "First iteration was fabricated on June 2018"
       img: ":led_driver.webp"
       img_title: "BUET LED Driver Controller Digital IC"
-      # git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
-      # date: "2021-03-13"
       post: |
         Under BUET-Energypac Research Collaboration HEQEP Sub-Project CP#3817 , We worked on designing a Digital 
         Controller IC for LED driver circuit. Purpose of this IC is to replace Analog controller circuit in Boost
@@ -36,7 +35,7 @@ research_project:
       post: |
         TSMC 180nm technology based 7 track standard cells.
 
-        This cell library contains 5o standard cells which can be used to design
+        This cell library contains 50 standard cells which can be used to design
         full digital circuits. It also contains three special analog cells for mix-signal 
         design purpose. This cells are used to design BUET LED driver controller circuit.
         
@@ -55,11 +54,40 @@ academic_project:
 
 
   list:
+    - type: id_redalert
+      project_name: "A Technical Analysis of RedAlert Ransomware - Targeting Virtual Machine Files"
+      img: ":redalert.webp"
+      img_title: "red_alert malware image"
+      post: |
+        Technical analysis on RedAlert(N13V) ransomware that targets VMWare ESXi servers running on Windows and Linus platform.
+        Static and Dynamic analysis of malware was performed to gain insight on how the malware works to collect data from the victim. 
+        Also indipendent analysis examined how those data is distributed in deep web.[[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/A_Technical_Analysis_of_RedAlert_Ransomware.pdf )]
+
+    - type: id_sentiment
+      project_name: "Sentiment analysis of stocks from financial-news headline with twitter feedback"
+      img: ":SentimentAnalysis.JPG"
+      img_title: "Sentiment Analysis of Meta Platforms, Inc. (META) based on financial news headline and tweets"
+      git_hub: "https://github.com/shaikhulhadi/Sentiment-Analysis-of-Stocks-from-financial-news-headline-with-twitter-feedback"
+      # date: "2021-03-13"
+      post: |
+        Here I analyzed public sentiment for a company stock based on relevant news headlines using Natural Language 
+        Toolkit (nltk) library. For each headline, relevant tweets also collected and analyzed for public sentiment 
+        to re-evaluate overall public sentiment towards the stock. Due to significant adoption of social media, how each 
+        headline is accepted in social media and how viral it become may give us more accurate public sentiment analysis 
+        of a particular stock.[[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/sentiment_analysis_report.pdf )]
+
+    - type: id_spectre
+      project_name: "Spectre: What do we know so far"
+      img: ":spectre.png"
+      img_title: "spectre_symble"
+      post: |
+        A review article on spectre attack focusing on current state of the vulnerability. This article tried to provide insight about spectre vulnurability, current state of reserach, suggested and deployed solutions in a organized manner.
+        [[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/Spectre_What_Do_we_Know_so_far.pdf )]
+
     - type: id_8bit_sap
       project_name: "8 bit Specialized SAP Microprocessor "
       img: ":8_bit_sap.webp"
       img_title: "8 Bit Specialized SAP Microprocessor Block Diagram"
-      # git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
       # date: "2021-03-13"
       post: |
         8 bit register microprocessor with 64Kbit memory capability, designed in Proteus simulation software. 
@@ -71,24 +99,14 @@ academic_project:
         To provide user easy way to insert instruction code, A compiler was also designed in C++
         to convert assembly code to hex output to upload in simulated memory.
 
-    - type: id_sentiment
-      project_name: "Sentiment analysis of stocks from financial-news headline with twitter feedback"
-      # project_excerpt: "First iteration was fabricated on June 2018"
-      img: ":SentimentAnalysis.JPG"
-      img_title: "Sentiment Analysis of Meta Platforms, Inc. (META) based on financial news headline and
-tweets"
-      git_hub: "https://github.com/shaikhulhadi/Sentiment-Analysis-of-Stocks-from-financial-news-headline-with-twitter-feedback"
-      # date: "2021-03-13"
+    - type: id_os
+      project_name: "Personal Operating System"
+      git_hub: "https://github.com/shaikhulhadi/PersonalOS"
       post: |
-        Here I analyzed public sentiment for a company stock based on relevant news headlines using Natural Language 
-        Toolkit (nltk) library. For each headline, relevant tweets also collected and analyzed for public sentiment 
-        to re-evaluate overall public sentiment towards the stock. Due to significant adoption of social media, how each 
-        headline is accepted in social media and how viral it become may give us more accurate public sentiment analysis 
-        of a particular stock.
+        Developed a personal OS from scratch to understand interaction between OS and hardware. Current version features boot-loader, interrupt handler, video driver as per requirement of instructor.
 
     - type: id_load_flow
       project_name: "Load-flow analysis tool"
-      # project_excerpt: "First iteration was fabricated on June 2018"
       img: ":load_flow.webp"
       img_title: "Load Flow Analysys Tool Interface"
       git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
@@ -97,32 +115,16 @@ tweets"
         MATLAB based Gauss-seidel load flow analysis tool with MATLAB GUI user interface to analyze requred power sourc
         insertion at certain point of power grid and could analyze up to 100 power grid bus.
 
-    - type: id_os
-      project_name: "Personal Operating System"
-      git_hub: "https://github.com/shaikhulhadi/PersonalOS"
-      post: |
-        Developed a personal OS from scratch to understand interaction between OS and hardware. Current version features boot-loader, interrupt handler, video driver as per requirement of instructor.
-
-    - type: id_smart_traffic
-      project_name: "Statistical data based smart traffic control system"
-      post: |
-        This traffic control system perform real time traffic data analysis for traffic predictability and
-        cell based design for ease of installation for developing and underdeveloped country. Each cell ( traffic intersection)
-        is desinged to work independently while communicationg nearby cell for more efficiant prediction. Emergency transport prioritization
-        was also implemented.
-
     - type: id_alu
       project_name: "4-Bit Arithmetic Logic Unit Design with Shifter"
-      project_excerpt: "First iteration was fabricated on June 2018"
       img: ":4_bit_ALU.webp"
       img_title: "Single Bit Adder of the LU"
-      # git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
       # date: "2021-03-13"
       post: |
         This is a asynchronous arithmetic logic unit bit wise design using Cadence Design Suite . 
         This circuit could perform 12 predefined opcode based operation both logical and arithmetical. 
         Total design required only 502 MOSFET as  one of the major concern was to optimized design area.  
-        Total layout have to be designed manually as requirement.
+        Total layout have to be designed manually as requirement.[[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/4Bit_Arethmatic_Logic_Unit.pdf )]
 
     - type: id_perkinson
       project_name: "High-Accuracy Detection of Early Parkinson's Disease through Multimodal Features and Machine Learning"
@@ -135,13 +137,18 @@ tweets"
         
         Updated database was used in this recreation and nearly matched output result was found. Logistic Regression, 
         Boosted Tree & SVM machine learning algorithm was implemented. To implement those algorithms, MATLAB 
-        Classification Learner tool was used. 
+        Classification Learner tool was used. [[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf )]
+
+    - type: id_smart_traffic
+      project_name: "Statistical data based smart traffic control system"
+      post: |
+        This traffic control system perform real time traffic data analysis for traffic predictability and
+        cell based design for ease of installation for developing and underdeveloped country. Each cell ( traffic intersection)
+        is desinged to work independently while communicationg nearby cell for more efficiant prediction. Emergency transport prioritization
+        was also implemented.
 
     - type: id_tick_tack
       project_name: "Tic Tac Toe game using 74xx series digital logci circuit"
-      # project_excerpt: "First iteration was fabricated on June 2018"
-      # img: ":load_flow.webp"
-      # img_title: "Load Flow Analysys Tool Interface"
       git_hub: "https://github.com/shaikhulhadi/TicTacToe-Circut"
       # date: "2021-03-13"
       post: |
