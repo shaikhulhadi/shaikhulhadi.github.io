@@ -1,5 +1,3 @@
-
-
 ### Introduction
 
 This webpage uses open source template provided by [Mr. Greeen](https://www.mrgreensworkshop.com/). I tried my best to follow proper referencing to maintain license consensus.
