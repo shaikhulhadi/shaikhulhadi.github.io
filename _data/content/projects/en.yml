@@ -61,7 +61,7 @@ academic_project:
       post: |
         Technical analysis on RedAlert(N13V) ransomware that targets VMWare ESXi servers running on Windows and Linus platform.
         Static and Dynamic analysis of malware was performed to gain insight on how the malware works to collect data from the victim. 
-        Also indipendent analysis examined how those data is distributed in deep web.[[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/A_Technical_Analysis_of_RedAlert_Ransomware.pdf )]
+        Also indipendent analysis examined how those data is distributed in deep web. [[pdf](/assets/pdf/A_Technical_Analysis_of_RedAlert_Ransomware.pdf){:target="_blank"}]
 
     - type: id_sentiment
       project_name: "Sentiment analysis of stocks from financial-news headline with twitter feedback"
@@ -74,15 +74,7 @@ academic_project:
         Toolkit (nltk) library. For each headline, relevant tweets also collected and analyzed for public sentiment 
         to re-evaluate overall public sentiment towards the stock. Due to significant adoption of social media, how each 
         headline is accepted in social media and how viral it become may give us more accurate public sentiment analysis 
-        of a particular stock.[[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/sentiment_analysis_report.pdf )]
-
-    - type: id_spectre
-      project_name: "Spectre: What do we know so far"
-      img: ":spectre.png"
-      img_title: "spectre_symble"
-      post: |
-        A review article on spectre attack focusing on current state of the vulnerability. This article tried to provide insight about spectre vulnurability, current state of reserach, suggested and deployed solutions in a organized manner.
-        [[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/Spectre_What_Do_we_Know_so_far.pdf )]
+        of a particular stock. [[pdf](/assets/pdf/sentiment_analysis_report.pdf){:target="_blank"}]
 
     - type: id_8bit_sap
       project_name: "8 bit Specialized SAP Microprocessor "
@@ -100,10 +92,12 @@ academic_project:
         to convert assembly code to hex output to upload in simulated memory.
 
     - type: id_os
-      project_name: "Personal Operating System"
+      project_name: "Bare-Metal Operating System"
       git_hub: "https://github.com/shaikhulhadi/PersonalOS"
       post: |
-        Developed a personal OS from scratch to understand interaction between OS and hardware. Current version features boot-loader, interrupt handler, video driver as per requirement of instructor.
+        Developed a personal bare-metal operating system from scratch in C to understand interaction between OS and hardware. 
+        Current version features boot-loader, interrupt handler,keyboard input and video driver as per requirement of instructor.
+        [[source code](https://github.com/shaikhulhadi/PersonalOS)]
 
     - type: id_load_flow
       project_name: "Load-flow analysis tool"
@@ -113,7 +107,7 @@ academic_project:
       # date: "2021-03-13"
       post: |
         MATLAB based Gauss-seidel load flow analysis tool with MATLAB GUI user interface to analyze requred power sourc
-        insertion at certain point of power grid and could analyze up to 100 power grid bus.
+        insertion at certain point of power grid and could analyze up to 100 power grid bus.[[source code](https://github.com/shaikhulhadi/Load-flow-Analysis)]
 
     - type: id_alu
       project_name: "4-Bit Arithmetic Logic Unit Design with Shifter"
@@ -124,7 +118,7 @@ academic_project:
         This is a asynchronous arithmetic logic unit bit wise design using Cadence Design Suite . 
         This circuit could perform 12 predefined opcode based operation both logical and arithmetical. 
         Total design required only 502 MOSFET as  one of the major concern was to optimized design area.  
-        Total layout have to be designed manually as requirement.[[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/4Bit_Arethmatic_Logic_Unit.pdf )]
+        Total layout have to be designed manually as requirement. [[pdf](/assets/pdf/4Bit_Arethmatic_Logic_Unit.pdf){:target="_blank"}]
 
     - type: id_perkinson
       project_name: "High-Accuracy Detection of Early Parkinson's Disease through Multimodal Features and Machine Learning"
@@ -137,16 +131,24 @@ academic_project:
         
         Updated database was used in this recreation and nearly matched output result was found. Logistic Regression, 
         Boosted Tree & SVM machine learning algorithm was implemented. To implement those algorithms, MATLAB 
-        Classification Learner tool was used. [[pdf](https://github.com/shaikhulhadi/shaikhulhadi.github.io/_includes/about/reports/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf )]
+        Classification Learner tool was used. [[pdf](/assets/pdf/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf){:target="_blank"}]
 
-    - type: id_smart_traffic
-      project_name: "Statistical data based smart traffic control system"
+    # - type: id_smart_traffic
+    #   project_name: "Statistical data based smart traffic control system"
+    #   post: |
+    #     This traffic control system perform real time traffic data analysis for traffic predictability and
+    #     cell based design for ease of installation for developing and underdeveloped country. Each cell ( traffic intersection)
+    #     is desinged to work independently while communicationg nearby cell for more efficiant prediction. Emergency transport prioritization
+    #     was also implemented.
+
+    - type: id_spectre
+      project_name: "Spectre: What do we know so far"
+      img: ":spectre.png"
+      img_title: "spectre_symble"
       post: |
-        This traffic control system perform real time traffic data analysis for traffic predictability and
-        cell based design for ease of installation for developing and underdeveloped country. Each cell ( traffic intersection)
-        is desinged to work independently while communicationg nearby cell for more efficiant prediction. Emergency transport prioritization
-        was also implemented.
-
+        A review article on spectre attack focusing on current state of the vulnerability. This article tried to provide insight about spectre vulnurability, current state of reserach, suggested and deployed solutions in a organized manner.
+        [[pdf](/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf){:target="_blank"}]
+        
     - type: id_tick_tack
       project_name: "Tic Tac Toe game using 74xx series digital logci circuit"
       git_hub: "https://github.com/shaikhulhadi/TicTacToe-Circut"
@@ -155,4 +157,3 @@ academic_project:
         Tick Tac Toe game board using digital logic circuit based on 74xx series ic. This hardware has built in cheat prove
         to double insert or delete multiple input and distinctive lighting indication system to differentiate player. Alongside simulation,
         PCB board was designed using Proteus Design Suit.
-        
