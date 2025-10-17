@@ -1,0 +1,4 @@
+Assume Role: Web developer developing an webpage in using github in jackyll. 
+Note: 
+- Resume directory : _includes/about/ShaikhulHadi.pdf
+- Project file : _data/content/project/en.yml
