@@ -1,0 +1,39 @@
+{%- assign about_title = site.data.owner[lng].about.sub_title
+  | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample -%}
+<div class="multipurpose-container about-container" style="margin-top:0; margin-bottom:{{ include.gap }};">
+  <div class="row about-main">
+    <div class="col-md-3 about-img">
+      <img src="{{ site.baseurl }}{{ site.data.conf.main.side_nav_profile_img_path }}" alt="" style="border-radius:16px;">
+    </div>
+    <div class="col-md-9 about-header" style="position:static; top:auto; transform:none; margin-left:0; padding-left:15px;">
+      <h1 translate="no" style="width:auto;">{{ site.data.owner[lng].brand }}</h1>
+      <div class="meta-container">
+        {%- if site.data.owner[lng].about.sub_title %}
+          <p class="sub-title">
+            {%- if site.data.conf.others.about.sub_title_icon %}<i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>{% endif -%}
+            &nbsp;{{ about_title }}
+          </p>
+        {% endif -%}
+        {%- assign tmp_obj = site.data.owner[lng].contacts | where_exp: "item", "item.email != nil" | first -%}
+        {%- assign email = tmp_obj['email'] -%}
+        {%- if site.data.conf.others.about.show_email and email %}
+          {%- assign _email = email | split: '@' %}
+          <p class="email">
+            <a href="javascript:void(0);" onclick="setAddress('{{ _email[0] }}', '{{ _email[1] }}');">
+              {%- if site.data.conf.others.about.email_icon %}<i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.email_icon }}"></i>{% endif -%}
+              &nbsp;{{ site.data.lang[lng].about.email_title }}
+            </a>
+          </p>
+        {% endif -%}
+        {%- if site.data.conf.others.about.show_contacts and site.data.owner[lng].contacts.size > 0 %}
+          {% include default/nav/contact-links.html -%}
+        {% endif -%}
+      </div>
+      <hr style="margin:8px 0 8px 0;">
+      <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-start;">
+        {% include about/resume_download.html %}
+        {% include about/position.html %}
+      </div>
+    </div>
+  </div>
+</div>

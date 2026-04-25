@@ -4,7 +4,7 @@ Shaikhul : Personal note on how to open and run this template file in local ubun
 1. install ruby and  ruby bundle ( sudo apt install ruby ruby-bundle)
 2. gem install jekyll bundler
 3. bundle add webrick
-4. sudo bundle install ( in this webpage directory)
+4. sudo bundle install (in this webpage directory)
 5. bundle exec jekyll serve
 
 ////////////////////////////////////////////////////////////////////////////
@@ -34,7 +34,7 @@ Note:
 
 
 ////////////////////////////////////////
-Update Proojects ( _data/content/project/en.yml)
+Update Proojects (_data/content/project/en.yml)
 ////////////////////////////////////
 
 To add new project, add new item to appropriate list following structure

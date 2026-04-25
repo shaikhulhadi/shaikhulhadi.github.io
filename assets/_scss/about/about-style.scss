@@ -15,9 +15,12 @@
   position: relative;
 }
 
-.about-container,
-.about-container .about-img img {
+.about-container {
   border-radius: 10px;
+}
+
+.about-container .about-img img {
+  border-radius: 16px;
 }
 
 .about-container .about-img img {

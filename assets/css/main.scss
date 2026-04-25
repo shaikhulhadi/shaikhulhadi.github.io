@@ -24,6 +24,7 @@
   /* space between containers */
   --multipurpose-container-margin-bottom: 20px;
   --footer-height: 27px;
+  --project-heading-height: 90px;
 }
 
 {% if site.data.conf.main.google_font_load_in_head == nil or site.data.conf.main.google_font_load_in_head == false %}

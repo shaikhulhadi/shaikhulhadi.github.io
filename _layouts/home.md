@@ -19,7 +19,9 @@ layout: default
   {%- endif -%}
 {%- endif -%}
 
-<div class="multipurpose-container home-heading-container">
+{%- assign home_gap = "16px" -%}
+
+<div class="multipurpose-container home-heading-container" style="margin-bottom:{{ home_gap }};">
   <div class="home-heading" {{ home_img_background_style }}>
     {{ home_img_tag }}
     <div class="home-heading-message">
@@ -64,13 +66,12 @@ layout: default
 {% endif -%} -->
 
     
-<div >
+<div class="multipurpose-container" style="margin-bottom:{{ home_gap }};">
   {% include home/qoutation.html %}
 </div>
 
-<div class="multipurpose-container new-posts-container">
-<div>
-<!-- <div class="home-intro-text markdown-style"> -->
- {% include home/short_introduction.html %} 
-</div>
+{% include home/about_snippet.html gap=home_gap %}
+
+<div class="multipurpose-container">
+  {% include home/short_introduction.html %}
 </div>
