@@ -3,10 +3,45 @@
 #                Projects Page Data
 ###########################################################
 temp_base_url: data[base_url]
+
+###########################################################
+#                Research Project
+###########################################################
 research_project:
   main:
     header: "Research Project"
-    info: Projects I have worked on as a Research Engineer
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    # img: ":projects-heading.jpg"
+    back_color: "light-gray"
+
+  list:
+    - type: id_dpd
+      project_name: "Distributed Persistent Domain"
+      project_excerpt: "Manuscript submitted"
+      post: |
+        Memory disaggregation allowed to scale memory capacity and bandwidth independently from compute resources. 
+        Memory disaggregation also introduced new challenges for persistent memory programming, specially high persist operation latency.
+        Our goal is to  Develop a novel approach to define persistent domain  for disaggregated/distributed memory system to address persist memory programming challenges.
+    
+    - type: id_dai_project
+      project_name: "Durable Atomics Instructions"
+      project_excerpt: "Published in DAC 2023, nominated for NVMW 2024"
+      post: |
+        Lack of hardware support for durable atomic instructions violate crash consistency for persistent parallel programming when atomic instruciton is used. 
+        We propose  durable atomic instructions support that require minimal modification and utilize already existing cache coherence protocol in currnet hardware to achieve crash consistency for persistent parallel programming.
+        You evaluated work accomplished the primary goal of crash consistency and also realized 6.4% average speedup on SPLASH-4.
+        Our work was nominated to present the research at the Non-Volatile Memory Workshop (NVMW) 2024 besdies being Published
+        in Design Automication Conferece.
+
+
+
+###########################################################
+#                Engineering Project
+###########################################################
+engineering_project:
+  main:
+    header: "Engineering Project"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     # img: ":projects-heading.jpg"
@@ -41,12 +76,12 @@ research_project:
         
         All standard cell designs are characterized using Liberate and Abstract Generator of Cadence.
 
-
-
+###########################################################
+#                Research Project
+###########################################################
 academic_project:
   main:
     header: "Academic Projects"
-    info: "Academic projects I have worked on during my undergrad and graduate studies"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     # img: ":projects-heading.jpg"

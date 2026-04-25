@@ -6,6 +6,28 @@
 .project-heading-container {
   background-size: cover;
   text-align: center;
+  min-height: var(--project-heading-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-overflow {
+  display: none;
+}
+
+.project-show-more-container {
+  text-align: center;
+  margin-bottom: var(--multipurpose-container-margin-bottom);
+}
+
+.project-show-more-btn {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.project-show-more-btn .show-less {
+  display: none;
 }
 
 .project-heading-container .project-buttons {

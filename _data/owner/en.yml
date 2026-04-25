@@ -6,7 +6,7 @@ brand: "Khan Shaikhul Hadi"
 
 
 # text below the brand name
-brand_sub_text: "PhD Candidate, University of Central Florida (UCF) <br> Graduate Research Assistant, ARPERS Research <br> Graduate Teaching Assistant, UCF"
+brand_sub_text: "PhD Candidate, ARPERS Research <br> University of Central Florida (UCF)"
 
 # used for seo meta post author (if it's not defined in post)
 name: "Shaikhul"
@@ -54,7 +54,7 @@ contacts:
   - github: "shaikhulhadi" #https://github.com/
   - email: "shaikhulhadi@ucf.edu"
   - linkedin: "shaikhulhadi" #https://www.linkedin.com/in/
-  - twitter: "Anklon137" #https://twitter.com/
+  - google_scholar: "citations?user=qZ2vZk0AAAAJ&hl=en&oi=sra" #https://scholar.google.com/
   #- mastodon: ""
   #- instagram: ""
   #- youtube: ""

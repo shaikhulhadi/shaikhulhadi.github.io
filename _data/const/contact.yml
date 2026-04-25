@@ -33,6 +33,9 @@ youtube:
 facebook:
   icon: "fa fa-facebook"
   url: "https://www.facebook.com"
+google_scholar:
+  icon: "/assets/img/default/google-scholar.svg"
+  url: "https://scholar.google.com"
 # add your new contact
 # your_new_contact:
 #   icon: "fa fa-font"

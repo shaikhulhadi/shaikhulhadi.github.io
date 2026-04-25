@@ -82,6 +82,7 @@ layout: util/compress_js
 
 {% if projects_page_exist %}
   {% include_relative _js/projects/read-more-less.js %}
+  {% include_relative _js/projects/show-more-less.js %}
 {% endif %}
 
 {%- if post_exist -%}
