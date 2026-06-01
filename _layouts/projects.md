@@ -36,22 +36,20 @@ layout: default
       {% if list.img %}
         {%- assign prj_img_path = list.img -%}
         {%- assign prj_img_title = list.img_title -%}
+      {% elsif site.data.conf.others.projects.project_img_fill %}
+        {%- assign prj_img_path = "/assets/img/default/1x1px.png" -%}
+        {%- assign prj_img_title = "" -%}
       {% endif %}
-      {% if list.img -%}
+      {% if list.img or site.data.conf.others.projects.project_img_fill -%}
       <div class="col-md-3 project-img">
         <img src="{{ prj_img_path }}" alt="{{ prj_img_title }}">
       </div>
       {%- endif %}
-      <div class="{% if list.img %}col-md-9{% else %}col-md-12{% endif %} project-header">
-        <h1>{{ list.project_name }}</h1><h4>{{ list.project_excerpt }}</h4>
+      <div class="col-md-9 project-header">
+        <h1>{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}</h1><h4>{{ list.project_excerpt }}</h4>
         {% if list.date %}
         <div class="meta-container">
           <p class="date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;{{ list.date | date: out_date_format }}</p>
-        </div>
-        {%- endif %}
-        {% if list.git_hub %}
-        <div class="meta-container">
-          <p class="hover-effect"><a href={{ list.git_hub }} target="_blank"><i class="fa fa-github"></a></i></p>
         </div>
         {%- endif %}
         <hr>
@@ -120,15 +118,10 @@ layout: default
       </div>
       {%- endif %}
       <div class="col-md-9 project-header">
-        <h1>{{ list.project_name }}</h1><h4>{{ list.project_excerpt }}</h4>
+        <h1>{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}</h1><h4>{{ list.project_excerpt }}</h4>
         {% if list.date %}
         <div class="meta-container">
           <p class="date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;{{ list.date | date: out_date_format }}</p>
-        </div>
-        {%- endif %}
-        {% if list.git_hub %}
-        <div class="meta-container">
-          <p class="hover-effect"><a href={{ list.git_hub }} target="_blank"><i class="fa fa-github"></a></i></p>
         </div>
         {%- endif %}
         <hr>
@@ -174,7 +167,7 @@ layout: default
 
 
 {% for list in project_data.list -%}
-  <div class="multipurpose-container project-container{% if forloop.index > 3 %} project-overflow{% endif %}" {{ first_category_id }}>
+  <div class="multipurpose-container project-container{% if forloop.index > 5 %} project-overflow{% endif %}" {{ first_category_id }}>
     {%-assign first_category_id=nil -%}
     {%- include multi_lng/get-localized-long-date-format.liquid date = list.date -%}
     <div class="row">
@@ -191,15 +184,10 @@ layout: default
       </div>
       {%- endif %}
       <div class="{% if list.img or site.data.conf.others.projects.project_img_fill %}col-md-9{% else %}col-md-12{% endif %} project-header">
-        <h1>{{ list.project_name }}</h1><h4>{{ list.project_excerpt }}</h4>
+        <h1>{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}</h1><h4>{{ list.project_excerpt }}</h4>
         {% if list.date %}
         <div class="meta-container">
           <p class="date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;{{ list.date | date: out_date_format }}</p>
-        </div>
-        {%- endif %}
-        {% if list.git_hub %}
-        <div class="meta-container">
-          <p class="hover-effect"><a href={{ list.git_hub }} target="_blank"><i class="fa fa-github"></a></i></p>
         </div>
         {%- endif %}
         <hr>
@@ -219,7 +207,7 @@ layout: default
     </div>
   </div>
 {%- endfor %}
-{% if project_data.list.size > 3 %}
+{% if project_data.list.size > 5 %}
 <div class="project-show-more-container">
   <a href="javascript:void(0);" class="project-show-more-btn">
     <div class="show-more"><i class="fa fa-angle-double-down fa-fw" aria-hidden="true"></i> Show more projects</div>

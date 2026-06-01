@@ -10,29 +10,23 @@ temp_base_url: data[base_url]
 research_project:
   main:
     header: "Research Project"
-    text_color: "white"
-    # if you don't want to use background image, comment it. back_color will be activated.
-    # img: ":projects-heading.jpg"
-    back_color: "light-gray"
+    info: "Primary dissertation research — Computer Architecture"
 
   list:
     - type: id_dpd
       project_name: "Distributed Persistent Domain"
       project_excerpt: "Manuscript submitted"
       post: |
-        Memory disaggregation allowed to scale memory capacity and bandwidth independently from compute resources. 
-        Memory disaggregation also introduced new challenges for persistent memory programming, specially high persist operation latency.
-        Our goal is to  Develop a novel approach to define persistent domain  for disaggregated/distributed memory system to address persist memory programming challenges.
-    
+        Memory disaggregation introduces high persist-operation latency that breaks persistent memory programming models.
+        We propose a novel persistent domain abstraction for disaggregated memory systems to address crash consistency at scale.
+
     - type: id_dai_project
-      project_name: "Durable Atomics Instructions"
+      project_name: "Durable Atomic Instructions"
       project_excerpt: "Published in DAC 2023, nominated for NVMW 2024"
+      paper_url: "https://ieeexplore.ieee.org/abstract/document/10247729"
       post: |
-        Lack of hardware support for durable atomic instructions violate crash consistency for persistent parallel programming when atomic instruciton is used. 
-        We propose  durable atomic instructions support that require minimal modification and utilize already existing cache coherence protocol in currnet hardware to achieve crash consistency for persistent parallel programming.
-        You evaluated work accomplished the primary goal of crash consistency and also realized 6.4% average speedup on SPLASH-4.
-        Our work was nominated to present the research at the Non-Volatile Memory Workshop (NVMW) 2024 besdies being Published
-        in Design Automication Conferece.
+        Existing hardware lacks durable atomic instruction support, violating crash consistency in persistent parallel programs.
+        We extend the cache coherence protocol with minimal hardware changes, achieving crash consistency and a 6.4% average speedup on SPLASH-4.
 
 
 
@@ -42,131 +36,112 @@ research_project:
 engineering_project:
   main:
     header: "Engineering Project"
-    text_color: "white"
-    # if you don't want to use background image, comment it. back_color will be activated.
-    # img: ":projects-heading.jpg"
-    back_color: "light-gray"
 
   list:
     - type: id_led
       project_name: "BUET LED Driver Controller Digital IC"
-      project_excerpt: "First iteration was fabricated on June 2018"
+      project_excerpt: "First iteration fabricated June 2018"
       img: ":led_driver.webp"
       img_title: "BUET LED Driver Controller Digital IC"
       post: |
-        Under BUET-Energypac Research Collaboration HEQEP Sub-Project CP#3817 , We worked on designing a Digital 
-        Controller IC for LED driver circuit. Purpose of this IC is to replace Analog controller circuit in Boost
-        controller to increase longevity and reduce cost of LED driver circuit for Solar Home System use.
-        
-        180nm technology based BUET VLSI standard cell library is used for this design. A hybrid architecture is
-        followed. First spin fabrication is completed and testing bring out some mismatch issues with IO pad provided by Europractice IC service.
-        Next step modification includes designing own IO pad . There is also some scope to improve clock speed, high resolution ADC design and DFT implementation.
-    
+        Designed a digital controller IC to replace analog boost controllers in LED driver circuits for Solar Home Systems,
+        under BUET-Energypac Research Collaboration HEQEP Sub-Project CP#3817.
+        Implemented in TSMC 180nm technology; first fabrication completed with IO pad mismatch identified for next revision.
+
     - type: id_standard_cell
       project_name: "BUET VLSI Standard Cell Library"
-      project_excerpt: "Standard Cell Library Design and Characterization based on TSMC 180nm"
+      project_excerpt: "53-cell library based on TSMC 180nm 7-track technology"
       img: ":standard_cell.webp"
       img_title: "2 input NAND gate"
       post: |
-        TSMC 180nm technology based 7 track standard cells.
-
-        This cell library contains 50 standard cells which can be used to design
-        full digital circuits. It also contains three special analog cells for mix-signal 
-        design purpose. This cells are used to design BUET LED driver controller circuit.
-        
-        All standard cell designs are characterized using Liberate and Abstract Generator of Cadence.
+        Designed and characterized a 53-cell standard cell library (50 digital + 3 analog) based on TSMC 180nm 7-track technology.
+        All cells characterized using Cadence Liberate and Abstract Generator; library was used in the BUET LED driver controller design.
 
 ###########################################################
-#                Research Project
+#                Academic Projects
 ###########################################################
 academic_project:
   main:
     header: "Academic Projects"
-    text_color: "white"
-    # if you don't want to use background image, comment it. back_color will be activated.
-    # img: ":projects-heading.jpg"
-    back_color: "light-gray"
 
 
   list:
     - type: id_redalert
-      project_name: "A Technical Analysis of RedAlert Ransomware - Targeting Virtual Machine Files"
+      project_name: "A Technical Analysis of RedAlert Ransomware"
+      project_excerpt: "Targeting Virtual Machine Files on VMware ESXi"
+      pdf: "/assets/pdf/A_Technical_Analysis_of_RedAlert_Ransomware.pdf"
       img: ":redalert.webp"
       img_title: "red_alert malware image"
       post: |
-        Technical analysis on RedAlert(N13V) ransomware that targets VMWare ESXi servers running on Windows and Linus platform.
-        Static and Dynamic analysis of malware was performed to gain insight on how the malware works to collect data from the victim. 
-        Also indipendent analysis examined how those data is distributed in deep web. [[pdf](/assets/pdf/A_Technical_Analysis_of_RedAlert_Ransomware.pdf){:target="_blank"}]
-
-    - type: id_sentiment
-      project_name: "Sentiment analysis of stocks from financial-news headline with twitter feedback"
-      img: ":SentimentAnalysis.JPG"
-      img_title: "Sentiment Analysis of Meta Platforms, Inc. (META) based on financial news headline and tweets"
-      git_hub: "https://github.com/shaikhulhadi/Sentiment-Analysis-of-Stocks-from-financial-news-headline-with-twitter-feedback"
-      # date: "2021-03-13"
-      post: |
-        Here I analyzed public sentiment for a company stock based on relevant news headlines using Natural Language 
-        Toolkit (nltk) library. For each headline, relevant tweets also collected and analyzed for public sentiment 
-        to re-evaluate overall public sentiment towards the stock. Due to significant adoption of social media, how each 
-        headline is accepted in social media and how viral it become may give us more accurate public sentiment analysis 
-        of a particular stock. [[pdf](/assets/pdf/sentiment_analysis_report.pdf){:target="_blank"}]
+        Static and dynamic analysis of RedAlert (N13V) ransomware targeting VMware ESXi servers on Windows and Linux.
+        Independently examined how exfiltrated data is distributed on the deep web.  
 
     - type: id_8bit_sap
-      project_name: "8 bit Specialized SAP Microprocessor "
+      project_name: "8-Bit Specialized SAP Microprocessor"
+      project_excerpt: "Single-bus architecture with custom assembly compiler, designed in Proteus"
       img: ":8_bit_sap.webp"
       img_title: "8 Bit Specialized SAP Microprocessor Block Diagram"
-      # date: "2021-03-13"
       post: |
-        8 bit register microprocessor with 64Kbit memory capability, designed in Proteus simulation software. 
-        This was single bus architecture processor to perform basic SAP2 microprocessor 
-        commands along with PUSH and POP function (in total 16 instruction set predetermined by instructor). 
-        Temporary register was optimized and ideal cycle of IR was utilized as temporary memory 
-        element. 
-        
-        To provide user easy way to insert instruction code, A compiler was also designed in C++
-        to convert assembly code to hex output to upload in simulated memory.
+        Designed an 8-bit single-bus SAP2 microprocessor with 64Kbit memory in Proteus, supporting 16 instructions including PUSH and POP.
+        Developed a companion C++ compiler to convert assembly to hex for upload into simulated memory.
+
+    - type: id_alu
+      project_name: "4-Bit Arithmetic Logic Unit with Shifter"
+      project_excerpt: "12-opcode ALU in 502 MOSFETs, full manual layout in Cadence"
+      pdf: "/assets/pdf/4Bit_Arethmatic_Logic_Unit.pdf"
+      img: ":4_bit_ALU.webp"
+      img_title: "Single Bit Adder of the LU"
+      post: |
+        Designed an asynchronous 4-bit ALU with shifter supporting 12 opcodes, optimized to 502 MOSFETs using Cadence Design Suite.
+        Full transistor-level layout designed manually as per course requirement.
+        - type: id_sentiment
+
+    - type: id_spectre
+      project_name: "Spectre: What Do We Know So Far"
+      project_excerpt: "Review of the Spectre vulnerability, mitigations, and research state"
+      pdf: "/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf"
+      img: ":spectre.png"
+      img_title: "spectre_symble"
+      post: |
+        A structured review of the Spectre vulnerability covering its mechanism, current research state, and deployed mitigations.
 
     - type: id_os
       project_name: "Bare-Metal Operating System"
+      project_excerpt: "x86 OS from scratch: bootloader, interrupt handler, keyboard and video driver"
       git_hub: "https://github.com/shaikhulhadi/PersonalOS"
       post: |
-        Developed a personal bare-metal operating system from scratch in C to understand interaction between OS and hardware. 
-        Current version features boot-loader, interrupt handler,keyboard input and video driver as per requirement of instructor.
-        [[source code](https://github.com/shaikhulhadi/PersonalOS)]
+        Built an x86 OS from scratch in C covering bootloader, interrupt handler, keyboard input, and video driver.
+        Goal was direct understanding of hardware-OS interaction at the bare-metal level.
 
-    - type: id_load_flow
-      project_name: "Load-flow analysis tool"
-      img: ":load_flow.webp"
-      img_title: "Load Flow Analysys Tool Interface"
-      git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
-      # date: "2021-03-13"
+    - type: id_sentiment
+      project_name: "Sentiment Analysis of Stocks from Financial News with Twitter Feedback"
+      project_excerpt: "NLP-based public sentiment analysis augmented with social media data"
+      pdf: "/assets/pdf/sentiment_analysis_report.pdf"
+      git_hub: "https://github.com/shaikhulhadi/Sentiment-Analysis-of-Stocks-from-financial-news-headline-with-twitter-feedback"
+      img: ":SentimentAnalysis.JPG"
+      img_title: "Sentiment Analysis of Meta Platforms, Inc. (META) based on financial news headline and tweets"
       post: |
-        MATLAB based Gauss-seidel load flow analysis tool with MATLAB GUI user interface to analyze requred power sourc
-        insertion at certain point of power grid and could analyze up to 100 power grid bus.[[source code](https://github.com/shaikhulhadi/Load-flow-Analysis)]
-
-    - type: id_alu
-      project_name: "4-Bit Arithmetic Logic Unit Design with Shifter"
-      img: ":4_bit_ALU.webp"
-      img_title: "Single Bit Adder of the LU"
-      # date: "2021-03-13"
-      post: |
-        This is a asynchronous arithmetic logic unit bit wise design using Cadence Design Suite . 
-        This circuit could perform 12 predefined opcode based operation both logical and arithmetical. 
-        Total design required only 502 MOSFET as  one of the major concern was to optimized design area.  
-        Total layout have to be designed manually as requirement. [[pdf](/assets/pdf/4Bit_Arethmatic_Logic_Unit.pdf){:target="_blank"}]
+        Analyzed public stock sentiment from financial news headlines, augmented with relevant tweet data to weight social virality.
+        Implemented using Python NLTK; applied to Meta (META) stock data.
 
     - type: id_perkinson
-      project_name: "High-Accuracy Detection of Early Parkinson's Disease through Multimodal Features and Machine Learning"
+      project_name: "High-Accuracy Detection of Early Parkinson's Disease"
+      project_excerpt: "Multimodal ML reproduction study with updated dataset"
+      pdf: "/assets/pdf/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf"
       img: ":perkinsons.webp"
       img_title: "Difference between normal and abnormal brain image"
       post: |
-        This was a reproduction of an existing work ([High-Accuracy Detection of Early Parkinsons Disease through 
-        Multimodal Features and Machine Learning,R. Prashantha,Sumantra Dutta Roya, Pravat K. Mandal , Shantanu 
-        Ghoshd](https://www.sciencedirect.com/science/article/abs/pii/S1386505616300326?via%3Dihub)).
-        
-        Updated database was used in this recreation and nearly matched output result was found. Logistic Regression, 
-        Boosted Tree & SVM machine learning algorithm was implemented. To implement those algorithms, MATLAB 
-        Classification Learner tool was used. [[pdf](/assets/pdf/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf){:target="_blank"}]
+        Reproduced a multimodal machine learning study for early Parkinson's detection using an updated dataset.
+        Implemented Logistic Regression, Boosted Tree, and SVM classifiers via MATLAB Classification Learner, achieving near-matching results.
+
+    - type: id_load_flow
+      project_name: "Load-Flow Analysis Tool"
+      project_excerpt: "MATLAB GUI tool for power grid bus analysis up to 100 nodes"
+      img: ":load_flow.webp"
+      img_title: "Load Flow Analysis Tool Interface"
+      git_hub: "https://github.com/shaikhulhadi/Load-flow-Analysis"
+      post: |
+        MATLAB-based Gauss-Seidel load flow analysis tool with a GUI for analyzing power source insertion across up to 100 bus power grids.
 
     # - type: id_smart_traffic
     #   project_name: "Statistical data based smart traffic control system"
@@ -176,19 +151,11 @@ academic_project:
     #     is desinged to work independently while communicationg nearby cell for more efficiant prediction. Emergency transport prioritization
     #     was also implemented.
 
-    - type: id_spectre
-      project_name: "Spectre: What do we know so far"
-      img: ":spectre.png"
-      img_title: "spectre_symble"
-      post: |
-        A review article on spectre attack focusing on current state of the vulnerability. This article tried to provide insight about spectre vulnurability, current state of reserach, suggested and deployed solutions in a organized manner.
-        [[pdf](/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf){:target="_blank"}]
-        
-    - type: id_tick_tack
-      project_name: "Tic Tac Toe game using 74xx series digital logci circuit"
-      git_hub: "https://github.com/shaikhulhadi/TicTacToe-Circut"
-      # date: "2021-03-13"
-      post: |
-        Tick Tac Toe game board using digital logic circuit based on 74xx series ic. This hardware has built in cheat prove
-        to double insert or delete multiple input and distinctive lighting indication system to differentiate player. Alongside simulation,
-        PCB board was designed using Proteus Design Suit.
+
+    # - type: id_tick_tack
+    #   project_name: "Tic-Tac-Toe Game Using 74xx Series Digital Logic Circuit"
+    #   project_excerpt: "Cheat-proof hardware implementation with PCB design in Proteus"
+    #   git_hub: "https://github.com/shaikhulhadi/TicTacToe-Circut"
+    #   post: |
+    #     Implemented a cheat-proof Tic-Tac-Toe game board using 74xx series ICs with distinctive lighting for each player.
+    #     Designed and simulated the PCB layout in Proteus Design Suite.
