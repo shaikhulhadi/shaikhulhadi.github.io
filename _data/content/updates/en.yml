@@ -1,0 +1,75 @@
+page_title: "Updates"
+
+# ---------------------------------------------------------------
+# HOW TO ADD A NEW UPDATE
+# ---------------------------------------------------------------
+# 1. Copy one of the blocks below and paste it at the TOP of the
+#    items list (newest entry first).
+# 2. Fill in date, type, and text.
+# 3. Only the first 10 entries are displayed on the page.
+#
+# type options:
+#   award     — fellowships, grants, scholarships, honors
+#   paper     — paper accepted, published, or presented
+#   milestone — PhD milestones, internships, new positions
+#   other     — anything else (seminars, talks, service, etc.)
+# ---------------------------------------------------------------
+
+items:
+  # --- milestone example ---
+  # - date: "Feb 2026"
+  #   type: "milestone"
+  #   text: "Defended PhD Thesis proposal at University of Central Florida"
+
+   # #xample internship entry 
+  # # --- award example ---
+  # - date: "Jan 2026"
+  #   type: "award"
+  #   text: "Received the NSF Graduate Research Fellowship (GRF) award"
+
+  # # --- paper example ---
+  # - date: "Mar 2026"
+  #   type: "paper"
+  #   text: "Paper 'Minimizing Crash-Consistency Overheads in Disaggregated PM' accepted at ISCA 2026"
+
+  # # --- other example ---
+  # - date: "Apr 2026"
+  #   type: "other"
+  #   text: "Invited talk at UCF Systems Seminar on disaggregated persistent memory"
+# --- milestone example ---
+
+  - date: "Feb 2026"
+    type: "milestone"
+    text: "Defended PhD thesis proposal at the University of Central Florida"
+
+  - date: "Dec 2024"
+    type: "milestone"
+    text: "Earned Master of Science in Computer Science from the University of Central Florida"
+
+  - date: "Nov 2024"
+    type: "award"
+    text: "Awarded the 2025 Faculty Cluster Initiative Student Scholarship"
+
+  - date: "Nov 2024"
+    type: "milestone"
+    text: "Successfully passed PhD Candidacy at the University of Central Florida"
+
+  - date: "Mar 2024"
+    type: "other"
+    text: "Presented our accepted paper at Non-Volatile Memory Workshop (NVMW) 2024 in San Diego, CA"
+
+  - date: "Fall 2023"
+    type: "award"
+    text: "Received Computer Science Merit Scholarship from the University of Central Florida"
+  
+  - date: "Jul 2023"
+    type: "paper"
+    text: "Presented our accepted paper at the 2023 Design Automation Conference (DAC) in San Francisco, CA"
+
+  - date: "Apr 2023"
+    type: "milestone"
+    text: "Successfully passed the PhD qualifying examination" 
+
+  - date: "Jan 2021"
+    type: "milestone"
+    text: "Started PhD program in Computer Science at the University of Central Florida"

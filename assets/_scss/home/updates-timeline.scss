@@ -1,0 +1,86 @@
+.updates-timeline-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+
+.updates-timeline {
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background-color: var(--body-hr-color);
+  }
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -24px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+
+  &.dot-award     { background-color: #e0a800; border-color: #e0a800; }
+  &.dot-paper     { background-color: #3389de; border-color: #3389de; }
+  &.dot-milestone { background-color: #28a745; border-color: #28a745; }
+  &.dot-other     { background-color: var(--body-text-color); border-color: var(--body-text-color); }
+}
+
+.timeline-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+}
+
+.timeline-badge {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+  color: #fff;
+
+  &.badge-award     { background-color: #b08800; }
+  &.badge-paper     { background-color: #2272bb; }
+  &.badge-milestone { background-color: #1e8035; }
+  &.badge-other     { background-color: #666; }
+}
+
+.timeline-date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--body-text-color);
+  white-space: nowrap;
+  opacity: 0.75;
+}
+
+.timeline-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--body-text-color);
+  margin: 0;
+  width: 100%;
+  line-height: 1.5;
+}
