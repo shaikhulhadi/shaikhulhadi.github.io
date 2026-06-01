@@ -10,6 +10,7 @@ layout: default
 
 ---
 
+{% comment %}
 {%- if page.img %}
   {%- if site.data.conf.others.home.header_img_with_img_tag == true -%}
     {%- capture home_img_tag -%} <img src="{{ page.img }}" /> {%- endcapture -%}
@@ -18,8 +19,6 @@ layout: default
     {%- capture home_img_background_style -%} style="background-image:url('{{ page.img }}');" {%- endcapture -%}
   {%- endif -%}
 {%- endif -%}
-
-{%- assign home_gap = "16px" -%}
 
 <div class="multipurpose-container home-heading-container" style="margin-bottom:{{ home_gap }};">
   <div class="home-heading" {{ home_img_background_style }}>
@@ -42,6 +41,9 @@ layout: default
   <div class="home-intro-text markdown-style">
   </div>
 </div>
+{% endcomment %}
+
+{%- assign home_gap = "16px" -%}
 
 <!-- {%- if lng_pages.size > 0 and site.data.conf.others.home.new_posts %}
 <div class="multipurpose-container new-posts-container">
@@ -66,12 +68,14 @@ layout: default
 {% endif -%} -->
 
     
+{% include home/about_snippet.html gap=home_gap %}
+
 <div class="multipurpose-container" style="margin-bottom:{{ home_gap }};">
   {% include home/qoutation.html %}
 </div>
 
-{% include home/about_snippet.html gap=home_gap %}
-
 <div class="multipurpose-container">
   {% include home/short_introduction.html %}
 </div>
+
+{% include home/updates_timeline.html %}

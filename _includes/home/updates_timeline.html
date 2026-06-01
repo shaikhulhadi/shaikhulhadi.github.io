@@ -1,0 +1,20 @@
+{%- include multi_lng/get-lng-by-url.liquid -%}
+{%- assign lng = get_lng -%}
+{%- assign updates_data = site.data.content.updates[lng] -%}
+{%- if updates_data and updates_data.items and updates_data.items.size > 0 -%}
+<div class="multipurpose-container updates-timeline-container">
+  <h2>{{ updates_data.page_title | default: "Updates" }}</h2>
+  <div class="updates-timeline">
+    {%- for item in updates_data.items limit: 10 -%}
+    <div class="timeline-entry">
+      <div class="timeline-dot dot-{{ item.type | default: 'other' }}"></div>
+      <div class="timeline-content">
+        <span class="timeline-badge badge-{{ item.type | default: 'other' }}">{{ item.type | capitalize | default: "Other" }}</span>
+        <span class="timeline-date">{{ item.date }}</span>
+        <p class="timeline-text">{{ item.text }}</p>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+{%- endif -%}
