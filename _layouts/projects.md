@@ -167,7 +167,7 @@ layout: default
 
 
 {% for list in project_data.list -%}
-  <div class="multipurpose-container project-container{% if forloop.index > 3 %} project-overflow{% endif %}" {{ first_category_id }}>
+  <div class="multipurpose-container project-container{% if forloop.index > 5 %} project-overflow{% endif %}" {{ first_category_id }}>
     {%-assign first_category_id=nil -%}
     {%- include multi_lng/get-localized-long-date-format.liquid date = list.date -%}
     <div class="row">
@@ -207,7 +207,7 @@ layout: default
     </div>
   </div>
 {%- endfor %}
-{% if project_data.list.size > 3 %}
+{% if project_data.list.size > 5 %}
 <div class="project-show-more-container">
   <a href="javascript:void(0);" class="project-show-more-btn">
     <div class="show-more"><i class="fa fa-angle-double-down fa-fw" aria-hidden="true"></i> Show more projects</div>

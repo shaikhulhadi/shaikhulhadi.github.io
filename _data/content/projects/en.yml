@@ -74,7 +74,44 @@ academic_project:
       img_title: "red_alert malware image"
       post: |
         Static and dynamic analysis of RedAlert (N13V) ransomware targeting VMware ESXi servers on Windows and Linux.
-        Independently examined how exfiltrated data is distributed on the deep web.
+        Independently examined how exfiltrated data is distributed on the deep web.  
+
+    - type: id_8bit_sap
+      project_name: "8-Bit Specialized SAP Microprocessor"
+      project_excerpt: "Single-bus architecture with custom assembly compiler, designed in Proteus"
+      img: ":8_bit_sap.webp"
+      img_title: "8 Bit Specialized SAP Microprocessor Block Diagram"
+      post: |
+        Designed an 8-bit single-bus SAP2 microprocessor with 64Kbit memory in Proteus, supporting 16 instructions including PUSH and POP.
+        Developed a companion C++ compiler to convert assembly to hex for upload into simulated memory.
+
+    - type: id_alu
+      project_name: "4-Bit Arithmetic Logic Unit with Shifter"
+      project_excerpt: "12-opcode ALU in 502 MOSFETs, full manual layout in Cadence"
+      pdf: "/assets/pdf/4Bit_Arethmatic_Logic_Unit.pdf"
+      img: ":4_bit_ALU.webp"
+      img_title: "Single Bit Adder of the LU"
+      post: |
+        Designed an asynchronous 4-bit ALU with shifter supporting 12 opcodes, optimized to 502 MOSFETs using Cadence Design Suite.
+        Full transistor-level layout designed manually as per course requirement.
+        - type: id_sentiment
+
+    - type: id_spectre
+      project_name: "Spectre: What Do We Know So Far"
+      project_excerpt: "Review of the Spectre vulnerability, mitigations, and research state"
+      pdf: "/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf"
+      img: ":spectre.png"
+      img_title: "spectre_symble"
+      post: |
+        A structured review of the Spectre vulnerability covering its mechanism, current research state, and deployed mitigations.
+
+    - type: id_os
+      project_name: "Bare-Metal Operating System"
+      project_excerpt: "x86 OS from scratch: bootloader, interrupt handler, keyboard and video driver"
+      git_hub: "https://github.com/shaikhulhadi/PersonalOS"
+      post: |
+        Built an x86 OS from scratch in C covering bootloader, interrupt handler, keyboard input, and video driver.
+        Goal was direct understanding of hardware-OS interaction at the bare-metal level.
 
     - type: id_sentiment
       project_name: "Sentiment Analysis of Stocks from Financial News with Twitter Feedback"
@@ -86,42 +123,6 @@ academic_project:
       post: |
         Analyzed public stock sentiment from financial news headlines, augmented with relevant tweet data to weight social virality.
         Implemented using Python NLTK; applied to Meta (META) stock data.
-
-    - type: id_8bit_sap
-      project_name: "8-Bit Specialized SAP Microprocessor"
-      project_excerpt: "Single-bus architecture with custom assembly compiler, designed in Proteus"
-      img: ":8_bit_sap.webp"
-      img_title: "8 Bit Specialized SAP Microprocessor Block Diagram"
-      post: |
-        Designed an 8-bit single-bus SAP2 microprocessor with 64Kbit memory in Proteus, supporting 16 instructions including PUSH and POP.
-        Developed a companion C++ compiler to convert assembly to hex for upload into simulated memory.
-
-    - type: id_os
-      project_name: "Bare-Metal Operating System"
-      project_excerpt: "x86 OS from scratch: bootloader, interrupt handler, keyboard and video driver"
-      git_hub: "https://github.com/shaikhulhadi/PersonalOS"
-      post: |
-        Built an x86 OS from scratch in C covering bootloader, interrupt handler, keyboard input, and video driver.
-        Goal was direct understanding of hardware-OS interaction at the bare-metal level.
-
-    - type: id_spectre
-      project_name: "Spectre: What Do We Know So Far"
-      project_excerpt: "Review of the Spectre vulnerability, mitigations, and research state"
-      pdf: "/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf"
-      img: ":spectre.png"
-      img_title: "spectre_symble"
-      post: |
-        A structured review of the Spectre vulnerability covering its mechanism, current research state, and deployed mitigations.
-
-    - type: id_alu
-      project_name: "4-Bit Arithmetic Logic Unit with Shifter"
-      project_excerpt: "12-opcode ALU in 502 MOSFETs, full manual layout in Cadence"
-      pdf: "/assets/pdf/4Bit_Arethmatic_Logic_Unit.pdf"
-      img: ":4_bit_ALU.webp"
-      img_title: "Single Bit Adder of the LU"
-      post: |
-        Designed an asynchronous 4-bit ALU with shifter supporting 12 opcodes, optimized to 502 MOSFETs using Cadence Design Suite.
-        Full transistor-level layout designed manually as per course requirement.
 
     - type: id_perkinson
       project_name: "High-Accuracy Detection of Early Parkinson's Disease"
