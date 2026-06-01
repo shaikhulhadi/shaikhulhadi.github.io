@@ -11,7 +11,7 @@ layout: default
 
 {%- assign publication_data = page.page_data | default: site.data.content.publication[lng].page_data -%}
 
-<div class="multipurpose-container publication-heading-container">
+<div class="multipurpose-container publication-heading-container" style="background-color: transparent; box-shadow: none;">
   <center><h1>{{ publication_data.main.header | default: "publication" }}</h1></center>
   <!-- <p>{{ publication_data.main.info | default: "No data, check page_data in [language]/tabs/publication.md front matter or _data/content/publication/[language].yml" }}</p> -->
 </div>
