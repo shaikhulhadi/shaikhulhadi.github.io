@@ -34,7 +34,7 @@ facebook:
   icon: "fa fa-facebook"
   url: "https://www.facebook.com"
 google_scholar:
-  icon: "/assets/img/default/google-scholar.svg"
+  icon: "ai ai-google-scholar"
   url: "https://scholar.google.com"
 # add your new contact
 # your_new_contact:
