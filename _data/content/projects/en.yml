@@ -70,26 +70,29 @@ academic_project:
 
 
   list:
-    - type: id_8bit_sap
-      tag: hardware
-      project_name: "8-Bit Specialized SAP Microprocessor"
-      project_excerpt: "Single-bus architecture with custom assembly compiler, designed in Proteus"
-      img: ":8_bit_sap.webp"
-      img_title: "8 Bit Specialized SAP Microprocessor Block Diagram"
-      post: |
-        Designed an 8-bit single-bus SAP2 microprocessor with 64Kbit memory in Proteus, supporting 16 instructions including PUSH and POP.
-        Developed a companion C++ compiler to convert assembly to hex for upload into simulated memory.
 
-    - type: id_spectre
+    - type: id_redalert
       tag: research
-      project_name: "Spectre: What Do We Know So Far"
-      project_excerpt: "Review of the Spectre vulnerability, mitigations, and research state"
-      pdf: "/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf"
-      img: ":spectre.png"
-      img_title: "spectre_symble"
+      project_name: "A Technical Analysis of RedAlert Ransomware"
+      project_excerpt: "Targeting Virtual Machine Files on VMware ESXi"
+      pdf: "/assets/pdf/A_Technical_Analysis_of_RedAlert_Ransomware.pdf"
+      # img: ":redalert.webp"
+      # img_title: "red_alert malware image"
       post: |
-        A structured review of the Spectre vulnerability covering its mechanism, current research state, 
-        and deployed mitigations.
+        Static and dynamic analysis of RedAlert (N13V) ransomware targeting VMware ESXi servers on Windows and Linux.
+        Independently examined how exfiltrated data is distributed on the deep web.
+
+    - type: id_sentiment
+      tag: software
+      project_name: "Sentiment Analysis of Stocks from Financial News with Twitter Feedback"
+      project_excerpt: "NLP-based public sentiment analysis augmented with social media data"
+      pdf: "/assets/pdf/sentiment_analysis_report.pdf"
+      git_hub: "https://github.com/shaikhulhadi/Sentiment-Analysis-of-Stocks-from-financial-news-headline-with-twitter-feedback"
+      # img: ":SentimentAnalysis.JPG"
+      # img_title: "Sentiment Analysis of Meta Platforms, Inc. (META) based on financial news headline and tweets"
+      post: |
+        Analyzed public stock sentiment from financial news headlines, augmented with relevant tweet data to weight social virality.
+        Implemented using Python NLTK; applied to Meta (META), Apple (AAPL), Tesla (TSLA) etc. stock data.
 
     - type: id_os
       tag: software
@@ -99,6 +102,39 @@ academic_project:
       post: |
         Built an x86 OS from scratch in C covering bootloader, interrupt handler, keyboard input, and video driver.
         Goal was direct understanding of hardware-OS interaction at the bare-metal level.
+
+    - type: id_spectre
+      tag: research
+      project_name: "Spectre: What Do We Know So Far"
+      project_excerpt: "Review of the Spectre vulnerability, mitigations, and research state"
+      pdf: "/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf"
+      # img: ":spectre.png"
+      # img_title: "spectre_symble"
+      post: |
+        A structured review of the Spectre vulnerability covering its mechanism, current research state, 
+        and deployed mitigations.
+
+    - type: id_perkinson
+      tag: software
+      project_name: "High-Accuracy Detection of Early Parkinson's Disease"
+      project_excerpt: "Multimodal ML reproduction study with updated dataset"
+      pdf: "/assets/pdf/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf"
+      # img: ":perkinsons.webp"
+      # img_title: "Difference between normal and abnormal brain image"
+      post: |
+        Reproduced a multimodal machine learning study for early Parkinson's detection using an updated dataset.
+        Implemented Logistic Regression, Boosted Tree, and SVM classifiers via MATLAB Classification Learner, 
+        achieving near-matching results.
+
+    - type: id_8bit_sap
+      tag: hardware
+      project_name: "8-Bit Specialized SAP Microprocessor"
+      project_excerpt: "Single-bus architecture with custom assembly compiler, designed in Proteus"
+      img: ":8_bit_sap.webp"
+      img_title: "8 Bit Specialized SAP Microprocessor Block Diagram"
+      post: |
+        Designed an 8-bit single-bus SAP2 microprocessor with 64Kbit memory in Proteus, supporting 16 instructions including PUSH and POP.
+        Developed a companion C++ compiler to convert assembly to hex for upload into simulated memory.
 
     - type: id_alu
       tag: hardware
@@ -110,40 +146,6 @@ academic_project:
       post: |
         Designed an asynchronous 4-bit ALU with shifter supporting 12 opcodes, optimized to 502 MOSFETs using Cadence Design Suite.
         Full transistor-level layout designed manually as per course requirement.
-
-    - type: id_redalert
-      tag: research
-      project_name: "A Technical Analysis of RedAlert Ransomware"
-      project_excerpt: "Targeting Virtual Machine Files on VMware ESXi"
-      pdf: "/assets/pdf/A_Technical_Analysis_of_RedAlert_Ransomware.pdf"
-      img: ":redalert.webp"
-      img_title: "red_alert malware image"
-      post: |
-        Static and dynamic analysis of RedAlert (N13V) ransomware targeting VMware ESXi servers on Windows and Linux.
-        Independently examined how exfiltrated data is distributed on the deep web.
-
-    - type: id_sentiment
-      tag: software
-      project_name: "Sentiment Analysis of Stocks from Financial News with Twitter Feedback"
-      project_excerpt: "NLP-based public sentiment analysis augmented with social media data"
-      pdf: "/assets/pdf/sentiment_analysis_report.pdf"
-      git_hub: "https://github.com/shaikhulhadi/Sentiment-Analysis-of-Stocks-from-financial-news-headline-with-twitter-feedback"
-      img: ":SentimentAnalysis.JPG"
-      img_title: "Sentiment Analysis of Meta Platforms, Inc. (META) based on financial news headline and tweets"
-      post: |
-        Analyzed public stock sentiment from financial news headlines, augmented with relevant tweet data to weight social virality.
-        Implemented using Python NLTK; applied to Meta (META) stock data.
-
-    - type: id_perkinson
-      tag: software
-      project_name: "High-Accuracy Detection of Early Parkinson's Disease"
-      project_excerpt: "Multimodal ML reproduction study with updated dataset"
-      pdf: "/assets/pdf/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf"
-      img: ":perkinsons.webp"
-      img_title: "Difference between normal and abnormal brain image"
-      post: |
-        Reproduced a multimodal machine learning study for early Parkinson's detection using an updated dataset.
-        Implemented Logistic Regression, Boosted Tree, and SVM classifiers via MATLAB Classification Learner, achieving near-matching results.
 
     - type: id_load_flow
       tag: software
