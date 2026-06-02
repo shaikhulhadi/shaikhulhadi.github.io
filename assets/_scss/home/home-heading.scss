@@ -64,3 +64,48 @@
 .home-intro-text > p:last-child {
   margin-bottom: 0px;
 }
+
+.download-switch {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background-color: gray;
+  color: skyblue;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darkgreen;
+  }
+}
+
+.about-img img {
+  width: 170px;
+  height: auto;
+}
+
+.about-position-block > p {
+  font-family: 'Playfair Display', serif;
+}
+
+.home-quotation-container {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.home-intro-container {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.home-quotation {
+  margin: 0;
+  font-family: Georgia, 'Palatino Linotype', Palatino, serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: center;
+}

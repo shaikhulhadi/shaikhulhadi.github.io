@@ -33,7 +33,7 @@ $anchor-text-color-light: #3389de;
 }
 // default/contact
 %contact-colors-light {
-  --contact-icons-color: #{$button-color-light};
+  --contact-icons-color: #{$brand-color-light};
   --contact-icons-hover-color: #303033;
   --contact-header-color: #{$button-color-light};
   > ul > li > a > img {
