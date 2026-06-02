@@ -79,3 +79,107 @@
 /*.link-container > .table > tbody > tr > td {
   border-top-color: transparent;
 }*/
+
+/* ── Publication Timeline ── */
+.pub-timeline-list {
+  position: relative;
+  margin: 0 2.5% 0;
+  padding-left: 5.8rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 5.3rem;
+    top: 0.8rem;
+    bottom: 0.8rem;
+    width: 2px;
+    background: var(--body-hr-color);
+  }
+}
+
+.pub-timeline-entry {
+  position: relative;
+  padding: 0 0 2.4rem 1rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: calc(-0.5rem - 5px);
+    top: 0.55rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--body-anchor-text-color);
+    box-shadow:
+      0 0 0 3px var(--body-background-color),
+      0 0 5px 2px var(--body-anchor-text-color);
+  }
+}
+
+.pub-timeline-year {
+  position: absolute;
+  left: -5.5rem;
+  width: 3.5rem;
+  top: 0.35rem;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--body-anchor-text-color);
+  opacity: 0.85;
+  line-height: 1;
+}
+
+.pub-timeline-content {
+  overflow: hidden;
+}
+
+.pub-timeline-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+
+  a {
+    color: var(--body-anchor-text-color);
+    text-decoration: none;
+    &:hover { opacity: 0.8; }
+
+    i {
+      font-size: 0.65em;
+      vertical-align: middle;
+      margin-left: 0.3rem;
+    }
+  }
+}
+
+.pub-timeline-venue {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--body-anchor-text-color);
+  opacity: 0.85;
+  margin-bottom: 0.4rem;
+}
+
+.pub-timeline-authors {
+  font-size: 1.35rem;
+  font-style: italic;
+  font-family: Georgia, 'Palatino Linotype', Palatino, serif;
+  color: var(--body-text-color);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.pub-timeline-abstract {
+  font-size: 1.35rem;
+  color: var(--body-text-color);
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .pub-timeline-list {
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+}

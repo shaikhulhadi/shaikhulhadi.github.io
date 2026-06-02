@@ -1,3 +1,8 @@
+.updates-timeline-container {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .updates-timeline-container h2 {
   font-size: 2.2rem;
   margin-bottom: 18px;
@@ -32,18 +37,25 @@
 
 .timeline-dot {
   position: absolute;
-  left: -24px;
+  /* center 12px dot on 2px line at left:7px, entry offset by padding-left:28px
+     dot-left = (7px + 1px) - 6px - 28px = -26px */
+  left: -26px;
   top: 5px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid transparent;
   flex-shrink: 0;
+  --dot-color: var(--body-text-color);
+  background-color: var(--dot-color);
+  /* background ring punches a gap between dot and line for a bead-on-wire look */
+  box-shadow:
+    0 0 0 3px var(--body-background-color),
+    0 0 5px 2px var(--dot-color);
 
-  &.dot-award     { background-color: #e0a800; border-color: #e0a800; }
-  &.dot-paper     { background-color: #3389de; border-color: #3389de; }
-  &.dot-milestone { background-color: #28a745; border-color: #28a745; }
-  &.dot-other     { background-color: var(--body-text-color); border-color: var(--body-text-color); }
+  &.dot-award     { --dot-color: #e0a800; }
+  &.dot-paper     { --dot-color: #3389de; }
+  &.dot-milestone { --dot-color: #28a745; }
+  &.dot-other     { --dot-color: var(--body-text-color); }
 }
 
 .timeline-content {

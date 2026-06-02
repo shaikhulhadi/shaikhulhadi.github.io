@@ -7,6 +7,7 @@
   background-color: transparent;
   box-shadow: none;
   min-height: auto;
+  padding-top: 0.8rem;
   padding-bottom: 0;
   background-size: cover;
   text-align: center;
@@ -181,5 +182,221 @@
   .project-container .project-img {
     float: none;
     align-self: center;
+  }
+}
+
+/* ── Timeline layout ─────────────────────────────────────── */
+
+.project-section {
+  margin-bottom: 0;
+}
+
+.project-timeline-list {
+  position: relative;
+  margin: 0 2.5% 0;
+  padding-left: 2.2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0.4rem;
+    top: 0.8rem;
+    bottom: 0.8rem;
+    width: 2px;
+    background: var(--body-hr-color);
+  }
+}
+
+.project-timeline-entry {
+  position: relative;
+  padding: 0 0 2rem 1rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    /* center 10px dot on the 2px line at left:0.4rem, entry offset by list padding-left:2.2rem
+       dot-left = (0.4rem + 1px) - 5px - 2.2rem = -1.8rem - 4px */
+    left: calc(-1.8rem - 4px);
+    top: 0.55rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--body-anchor-text-color);
+    /* background ring punches a gap between dot and line for a bead-on-wire look */
+    box-shadow:
+      0 0 0 3px var(--body-background-color),
+      0 0 5px 2px var(--body-anchor-text-color);
+  }
+
+  &:last-child {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.project-img-trigger {
+  float: right;
+  margin: 0 0 0.8rem 1.2rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: zoom-in;
+  display: block;
+  border-radius: 6px;
+
+  &:focus-visible {
+    outline: 2px solid var(--body-anchor-text-color);
+    outline-offset: 2px;
+  }
+}
+
+.project-timeline-content {
+  overflow: hidden;
+}
+
+.project-entry-img {
+  width: 208px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: block;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.88;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-img-trigger {
+    float: none;
+    margin: 0 0 0.8rem 0;
+    width: 100%;
+  }
+  .project-entry-img {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+/* ── Lightbox ────────────────────────────────────────────── */
+
+#project-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.22s ease, visibility 0.22s ease;
+  cursor: zoom-out;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.active #project-lightbox-img {
+    transform: scale(1);
+  }
+}
+
+#project-lightbox-img {
+  max-width: 92vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.6);
+  cursor: default;
+  transform: scale(0.94);
+  transition: transform 0.22s ease;
+  display: block;
+}
+
+#project-lightbox-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.24);
+  }
+}
+
+.project-timeline-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+
+  a {
+    font-size: 0.65em;
+    vertical-align: middle;
+    color: var(--body-anchor-text-color);
+    margin-left: 0.2rem;
+    &:hover { opacity: 0.75; }
+  }
+}
+
+.project-timeline-excerpt {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--body-text-color);
+  opacity: 0.75;
+  margin-bottom: 0.6rem;
+}
+
+.project-timeline-post {
+  display: block;
+  font-size: 1.4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: var(--body-text-color);
+  text-align: justify;
+}
+
+/* ── Project tag badges ──────────────────────────────────── */
+
+.project-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 0.5rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.project-tag.tag-research  { background-color: #6d3eb8; }
+.project-tag.tag-hardware  { background-color: #c05400; }
+.project-tag.tag-software  { background-color: #0d7e6b; }
+
+.project-timeline-entry.tag-research::before { background: #6d3eb8; box-shadow: 0 0 0 3px var(--body-background-color), 0 0 5px 2px #6d3eb8; }
+.project-timeline-entry.tag-hardware::before { background: #c05400; box-shadow: 0 0 0 3px var(--body-background-color), 0 0 5px 2px #c05400; }
+.project-timeline-entry.tag-software::before { background: #0d7e6b; box-shadow: 0 0 0 3px var(--body-background-color), 0 0 5px 2px #0d7e6b; }
+
+@media screen and (max-width: 500px) {
+  .project-timeline-list {
+    margin-left: 0.5rem;
+    margin-right: 0;
   }
 }
