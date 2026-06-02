@@ -11,8 +11,8 @@ layout: default
 
 {%- assign publication_data = page.page_data | default: site.data.content.publication[lng].page_data -%}
 
-<div class="multipurpose-container publication-heading-container" style="background-color: transparent; box-shadow: none;">
-  <center><h1>{{ publication_data.main.header | default: "publication" }}</h1></center>
+<div class="multipurpose-container publication-heading-container" style="background-color: transparent; box-shadow: none; padding-bottom: 8px; margin-bottom: 15px;">
+  <center><h1 style="margin-bottom: 5px;">{{ publication_data.main.header | default: "publication" }}</h1></center>
   <!-- <p>{{ publication_data.main.info | default: "No data, check page_data in [language]/tabs/publication.md front matter or _data/content/publication/[language].yml" }}</p> -->
 </div>
 
@@ -36,7 +36,8 @@ layout: default
           <td>
             <p>
               <b>{{ link_url }}</b><br>
-              {{ list.authors }}<br>
+              <span style="font-family: Georgia, 'Palatino Linotype', Palatino, serif;">{{ list.authors | replace: "Khan Shaikhul Hadi", "<strong style='font-family: Georgia, Palatino, serif; font-size: 1.05em;'>Khan Shaikhul Hadi</strong>" }}</span>
+              <br><br>
               <i>{{ list.summary }}</i>
             </p>
           </td>

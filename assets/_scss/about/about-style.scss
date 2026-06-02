@@ -64,6 +64,12 @@
   color: var(--about-header-sub-title-color);
 }
 
+/* position descriptions near resume button */
+.about-position-block > p,
+.about-msg > p {
+  font-family: 'Playfair Display', serif;
+}
+
 /* .about-container .about-header>.meta-container>p.email>a */ /* email color */
 
 .about-container .about-divider hr {

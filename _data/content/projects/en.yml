@@ -94,7 +94,6 @@ academic_project:
       post: |
         Designed an asynchronous 4-bit ALU with shifter supporting 12 opcodes, optimized to 502 MOSFETs using Cadence Design Suite.
         Full transistor-level layout designed manually as per course requirement.
-        - type: id_sentiment
 
     - type: id_spectre
       project_name: "Spectre: What Do We Know So Far"

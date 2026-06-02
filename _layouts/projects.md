@@ -45,7 +45,7 @@ layout: default
         <img src="{{ prj_img_path }}" alt="{{ prj_img_title }}">
       </div>
       {%- endif %}
-      <div class="col-md-9 project-header">
+      <div class="{% if list.img or site.data.conf.others.projects.project_img_fill %}col-md-9{% else %}col-md-12{% endif %} project-header">
         <h1>{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}</h1><h4>{{ list.project_excerpt }}</h4>
         {% if list.date %}
         <div class="meta-container">
@@ -62,9 +62,6 @@ layout: default
     <div class="row">
       <div class="markdown-style">
         {{ list.post | markdownify }}
-        <a href="javascript:void(0);" class="read-more-less">
-          <i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_less_text }}
-        </a>
       </div>
     </div>
   </div>
@@ -117,7 +114,7 @@ layout: default
         <img src="{{ prj_img_path }}" alt="{{ prj_img_title }}">
       </div>
       {%- endif %}
-      <div class="col-md-9 project-header">
+      <div class="{% if list.img or site.data.conf.others.projects.project_img_fill %}col-md-9{% else %}col-md-12{% endif %} project-header">
         <h1>{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:0.7em; vertical-align:middle;"></i></a>{% endif %}</h1><h4>{{ list.project_excerpt }}</h4>
         {% if list.date %}
         <div class="meta-container">
@@ -134,9 +131,6 @@ layout: default
     <div class="row">
       <div class="markdown-style">
         {{ list.post | markdownify }}
-        <a href="javascript:void(0);" class="read-more-less">
-          <i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_less_text }}
-        </a>
       </div>
     </div>
   </div>
@@ -154,6 +148,13 @@ layout: default
 <br><br>
 <!---This section follow same format as above, but print academic projects --->
 {%- assign project_data = page.page_data | default: site.data.content.projects[lng].academic_project -%}
+
+{%- assign project_container_style = nil -%}
+{%- if project_data.main.img -%}
+  {%- capture project_container_style -%} style="background-image:url('{{ project_data.main.img }}');" {%- endcapture -%}
+{%- elsif project_data.main.back_color %}
+  {%- capture project_container_style -%} style="background-color:{{ project_data.main.back_color }};" {%- endcapture -%}
+{%- endif %}
 
 <div class="project-section">
 <div class="multipurpose-container project-heading-container" {{project_container_style}}>
@@ -200,9 +201,6 @@ layout: default
     <div class="row">
       <div class="markdown-style">
         {{ list.post | markdownify }}
-        <a href="javascript:void(0);" class="read-more-less">
-          <i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_less_text }}
-        </a>
       </div>
     </div>
   </div>

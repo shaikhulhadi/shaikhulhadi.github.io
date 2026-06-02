@@ -70,11 +70,11 @@ layout: default
     
 {% include home/about_snippet.html gap=home_gap %}
 
-<div class="multipurpose-container" style="margin-bottom:{{ home_gap }};">
+<div class="multipurpose-container home-quotation-container" style="margin-bottom:{{ home_gap }};">
   {% include home/qoutation.html %}
 </div>
 
-<div class="multipurpose-container">
+<div class="multipurpose-container home-intro-container">
   {% include home/short_introduction.html %}
 </div>
 
