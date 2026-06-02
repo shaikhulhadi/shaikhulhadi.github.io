@@ -141,6 +141,9 @@
 {% assign pages = site.html_pages | where_exp: "item", "item.layout == 'links'" %}
 {% if pages.size > 0 %} {% assign links_page_exist = true %} {% endif %}
 
+{% assign pages = site.html_pages | where_exp: "item", "item.layout == 'publication'" %}
+{% if pages.size > 0 %} {% assign publication_page_exist = true %} {% endif %}
+
 {% assign pages = site.html_pages | where_exp: "item", "item.layout == 'projects'" %}
 {% if pages.size > 0 %} {% assign projects_page_exist = true %} {% endif %}
 
@@ -264,7 +267,7 @@
   @import "archives/archives";
 {% endif %}
 
-{% if links_page_exist %}
+{% if links_page_exist or publication_page_exist %}
   @import "links/link-style";
 {% endif %}
 

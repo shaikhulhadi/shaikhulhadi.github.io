@@ -12,38 +12,23 @@ layout: default
 {%- assign publication_data = page.page_data | default: site.data.content.publication[lng].page_data -%}
 
 <div class="multipurpose-container publication-heading-container" style="background-color: transparent; box-shadow: none; padding-bottom: 8px; margin-bottom: 15px;">
-  <center><h1 style="margin-bottom: 5px;">{{ publication_data.main.header | default: "publication" }}</h1></center>
-  <!-- <p>{{ publication_data.main.info | default: "No data, check page_data in [language]/tabs/publication.md front matter or _data/content/publication/[language].yml" }}</p> -->
+  <center><h1 style="margin-bottom: 5px;">{{ publication_data.main.header | default: "Publications" }}</h1></center>
 </div>
 
-{%- if site.data.conf.others.publication.use_rows_as_link -%}{%- assign hover_class = "table-hover" -%}{%- endif -%}
-
-<div class="multipurpose-container link-container" id="id_publication" >
-  <table class="table {{ hover_class }}" >
-    <tbody>
-      {%- for list in publication_data.list %}
-        {%- if site.data.conf.others.publication.use_rows_as_link -%}
-          {%- capture link_onclick -%} onclick="openURL('{{ list.url }}');" style="cursor: pointer;" {%- endcapture -%}
-          {%- capture link_url -%} <b>{{ list.title }}</b> {%- endcapture -%}
-        {% else %}
-          {%- assign link_onclick = nil -%}
-          {%- capture link_url -%} <a href="{{ list.url }}" target="_blank" rel="noopener noreferrer"><b>{{ list.title}}</b></a> {%- endcapture -%}
-        {%- endif %}
-        <tr class="link-item" {{ link_onclick }} >
-          <td>
-            <p style="font-weight: bold; color: light-gray"> {{ list.conference }} - {{list.year}} </p>
-          </td>
-          <td>
-            <p>
-              <b>{{ link_url }}</b><br>
-              <span style="font-family: Georgia, 'Palatino Linotype', Palatino, serif;">{{ list.authors | replace: "Khan Shaikhul Hadi", "<strong style='font-family: Georgia, Palatino, serif; font-size: 1.05em;'>Khan Shaikhul Hadi</strong>" }}</span>
-              <br><br>
-              <i>{{ list.summary }}</i>
-            </p>
-          </td>
-        </tr>
-      {%- endfor %}
-    </tbody>
-  </table>
+<div class="pub-timeline-list">
+  {%- for list in publication_data.list %}
+  <div class="pub-timeline-entry">
+    <span class="pub-timeline-year">{{ list.year }}</span>
+    <div class="pub-timeline-content">
+      <h2 class="pub-timeline-title">
+        {%- if list.url %}<a href="{{ list.url }}" target="_blank" rel="noopener noreferrer">{{ list.title }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>{%- else %}{{ list.title }}{%- endif %}
+      </h2>
+      <h4 class="pub-timeline-venue">{{ list.conference }}</h4>
+      <p class="pub-timeline-authors">{{ list.authors | replace: "Khan Shaikhul Hadi", "<strong>Khan Shaikhul Hadi</strong>" }}</p>
+      {%- if list.summary %}
+      <p class="pub-timeline-abstract">{{ list.summary }}</p>
+      {%- endif %}
+    </div>
+  </div>
+  {%- endfor %}
 </div>
-

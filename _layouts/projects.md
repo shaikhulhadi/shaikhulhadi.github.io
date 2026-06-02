@@ -36,17 +36,17 @@ layout: default
         <h2 class="project-timeline-title">
           {% if list.tag %}<span class="project-tag tag-{{ list.tag }}">{{ list.tag | capitalize }}</span>{% endif %}{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif %}
         </h2>
+        {% if list.img %}
+          {%- include default/img/get-img-path.liquid img_name=list.img layout="projects" -%}
+          <button class="project-img-trigger" data-src="{{ get_img_path_out | strip }}" data-alt="{{ list.img_title | default: list.project_name }}" aria-label="View full image">
+            <img class="project-entry-img" src="{{ get_img_path_out | strip }}" alt="{{ list.img_title | default: list.project_name }}">
+          </button>
+        {% endif %}
         <h4 class="project-timeline-excerpt">{{ list.project_excerpt }}</h4>
         <div class="markdown-style project-timeline-post">
           {{ list.post | markdownify }}
         </div>
       </div>
-      {% if list.img %}
-        {%- include default/img/get-img-path.liquid img_name=list.img layout="projects" -%}
-        <button class="project-img-trigger" data-src="{{ get_img_path_out | strip }}" data-alt="{{ list.img_title | default: list.project_name }}" aria-label="View full image">
-          <img class="project-entry-img" src="{{ get_img_path_out | strip }}" alt="{{ list.img_title | default: list.project_name }}">
-        </button>
-      {% endif %}
     </div>
   </div>
 {% endfor %}
@@ -81,17 +81,17 @@ layout: default
         <h2 class="project-timeline-title">
           {% if list.tag %}<span class="project-tag tag-{{ list.tag }}">{{ list.tag | capitalize }}</span>{% endif %}{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif %}
         </h2>
+        {% if list.img %}
+          {%- include default/img/get-img-path.liquid img_name=list.img layout="projects" -%}
+          <button class="project-img-trigger" data-src="{{ get_img_path_out | strip }}" data-alt="{{ list.img_title | default: list.project_name }}" aria-label="View full image">
+            <img class="project-entry-img" src="{{ get_img_path_out | strip }}" alt="{{ list.img_title | default: list.project_name }}">
+          </button>
+        {% endif %}
         <h4 class="project-timeline-excerpt">{{ list.project_excerpt }}</h4>
         <div class="markdown-style project-timeline-post">
           {{ list.post | markdownify }}
         </div>
       </div>
-      {% if list.img %}
-        {%- include default/img/get-img-path.liquid img_name=list.img layout="projects" -%}
-        <button class="project-img-trigger" data-src="{{ get_img_path_out | strip }}" data-alt="{{ list.img_title | default: list.project_name }}" aria-label="View full image">
-          <img class="project-entry-img" src="{{ get_img_path_out | strip }}" alt="{{ list.img_title | default: list.project_name }}">
-        </button>
-      {% endif %}
     </div>
   </div>
 {% endfor %}
@@ -126,17 +126,17 @@ layout: default
         <h2 class="project-timeline-title">
           {% if list.tag %}<span class="project-tag tag-{{ list.tag }}">{{ list.tag | capitalize }}</span>{% endif %}{{ list.project_name }}{% if list.paper_url %}&nbsp;<a href="{{ list.paper_url }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}{% if list.git_hub %}&nbsp;<a href="{{ list.git_hub }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>{% endif %}{% if list.pdf %}&nbsp;<a href="{{ list.pdf }}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% endif %}
         </h2>
+        {% if list.img %}
+          {%- include default/img/get-img-path.liquid img_name=list.img layout="projects" -%}
+          <button class="project-img-trigger" data-src="{{ get_img_path_out | strip }}" data-alt="{{ list.img_title | default: list.project_name }}" aria-label="View full image">
+            <img class="project-entry-img" src="{{ get_img_path_out | strip }}" alt="{{ list.img_title | default: list.project_name }}">
+          </button>
+        {% endif %}
         <h4 class="project-timeline-excerpt">{{ list.project_excerpt }}</h4>
         <div class="markdown-style project-timeline-post">
           {{ list.post | markdownify }}
         </div>
       </div>
-      {% if list.img %}
-        {%- include default/img/get-img-path.liquid img_name=list.img layout="projects" -%}
-        <button class="project-img-trigger" data-src="{{ get_img_path_out | strip }}" data-alt="{{ list.img_title | default: list.project_name }}" aria-label="View full image">
-          <img class="project-entry-img" src="{{ get_img_path_out | strip }}" alt="{{ list.img_title | default: list.project_name }}">
-        </button>
-      {% endif %}
     </div>
   </div>
 {% endfor %}
