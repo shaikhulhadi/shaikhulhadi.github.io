@@ -14,6 +14,7 @@ research_project:
 
   list:
     - type: id_dpd
+      tag: research
       project_name: "Distributed Persistent Domain"
       project_excerpt: "Manuscript submitted"
       post: |
@@ -21,6 +22,7 @@ research_project:
         We propose a novel persistent domain abstraction for disaggregated memory systems to address crash consistency at scale.
 
     - type: id_dai_project
+      tag: research
       project_name: "Durable Atomic Instructions"
       project_excerpt: "Published in DAC 2023, nominated for NVMW 2024"
       paper_url: "https://ieeexplore.ieee.org/abstract/document/10247729"
@@ -39,6 +41,7 @@ engineering_project:
 
   list:
     - type: id_led
+      tag: hardware
       project_name: "BUET LED Driver Controller Digital IC"
       project_excerpt: "First iteration fabricated June 2018"
       img: ":led_driver.webp"
@@ -49,6 +52,7 @@ engineering_project:
         Implemented in TSMC 180nm technology; first fabrication completed with IO pad mismatch identified for next revision.
 
     - type: id_standard_cell
+      tag: hardware
       project_name: "BUET VLSI Standard Cell Library"
       project_excerpt: "53-cell library based on TSMC 180nm 7-track technology"
       img: ":standard_cell.webp"
@@ -66,17 +70,8 @@ academic_project:
 
 
   list:
-    - type: id_redalert
-      project_name: "A Technical Analysis of RedAlert Ransomware"
-      project_excerpt: "Targeting Virtual Machine Files on VMware ESXi"
-      pdf: "/assets/pdf/A_Technical_Analysis_of_RedAlert_Ransomware.pdf"
-      img: ":redalert.webp"
-      img_title: "red_alert malware image"
-      post: |
-        Static and dynamic analysis of RedAlert (N13V) ransomware targeting VMware ESXi servers on Windows and Linux.
-        Independently examined how exfiltrated data is distributed on the deep web.  
-
     - type: id_8bit_sap
+      tag: hardware
       project_name: "8-Bit Specialized SAP Microprocessor"
       project_excerpt: "Single-bus architecture with custom assembly compiler, designed in Proteus"
       img: ":8_bit_sap.webp"
@@ -85,7 +80,28 @@ academic_project:
         Designed an 8-bit single-bus SAP2 microprocessor with 64Kbit memory in Proteus, supporting 16 instructions including PUSH and POP.
         Developed a companion C++ compiler to convert assembly to hex for upload into simulated memory.
 
+    - type: id_spectre
+      tag: research
+      project_name: "Spectre: What Do We Know So Far"
+      project_excerpt: "Review of the Spectre vulnerability, mitigations, and research state"
+      pdf: "/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf"
+      img: ":spectre.png"
+      img_title: "spectre_symble"
+      post: |
+        A structured review of the Spectre vulnerability covering its mechanism, current research state, 
+        and deployed mitigations.
+
+    - type: id_os
+      tag: software
+      project_name: "Bare-Metal Operating System"
+      project_excerpt: "x86 OS from scratch: bootloader, interrupt handler, keyboard and video driver"
+      git_hub: "https://github.com/shaikhulhadi/PersonalOS"
+      post: |
+        Built an x86 OS from scratch in C covering bootloader, interrupt handler, keyboard input, and video driver.
+        Goal was direct understanding of hardware-OS interaction at the bare-metal level.
+
     - type: id_alu
+      tag: hardware
       project_name: "4-Bit Arithmetic Logic Unit with Shifter"
       project_excerpt: "12-opcode ALU in 502 MOSFETs, full manual layout in Cadence"
       pdf: "/assets/pdf/4Bit_Arethmatic_Logic_Unit.pdf"
@@ -95,24 +111,19 @@ academic_project:
         Designed an asynchronous 4-bit ALU with shifter supporting 12 opcodes, optimized to 502 MOSFETs using Cadence Design Suite.
         Full transistor-level layout designed manually as per course requirement.
 
-    - type: id_spectre
-      project_name: "Spectre: What Do We Know So Far"
-      project_excerpt: "Review of the Spectre vulnerability, mitigations, and research state"
-      pdf: "/assets/pdf/Spectre_What_Do_we_Know_so_far.pdf"
-      img: ":spectre.png"
-      img_title: "spectre_symble"
+    - type: id_redalert
+      tag: research
+      project_name: "A Technical Analysis of RedAlert Ransomware"
+      project_excerpt: "Targeting Virtual Machine Files on VMware ESXi"
+      pdf: "/assets/pdf/A_Technical_Analysis_of_RedAlert_Ransomware.pdf"
+      img: ":redalert.webp"
+      img_title: "red_alert malware image"
       post: |
-        A structured review of the Spectre vulnerability covering its mechanism, current research state, and deployed mitigations.
-
-    - type: id_os
-      project_name: "Bare-Metal Operating System"
-      project_excerpt: "x86 OS from scratch: bootloader, interrupt handler, keyboard and video driver"
-      git_hub: "https://github.com/shaikhulhadi/PersonalOS"
-      post: |
-        Built an x86 OS from scratch in C covering bootloader, interrupt handler, keyboard input, and video driver.
-        Goal was direct understanding of hardware-OS interaction at the bare-metal level.
+        Static and dynamic analysis of RedAlert (N13V) ransomware targeting VMware ESXi servers on Windows and Linux.
+        Independently examined how exfiltrated data is distributed on the deep web.
 
     - type: id_sentiment
+      tag: software
       project_name: "Sentiment Analysis of Stocks from Financial News with Twitter Feedback"
       project_excerpt: "NLP-based public sentiment analysis augmented with social media data"
       pdf: "/assets/pdf/sentiment_analysis_report.pdf"
@@ -124,6 +135,7 @@ academic_project:
         Implemented using Python NLTK; applied to Meta (META) stock data.
 
     - type: id_perkinson
+      tag: software
       project_name: "High-Accuracy Detection of Early Parkinson's Disease"
       project_excerpt: "Multimodal ML reproduction study with updated dataset"
       pdf: "/assets/pdf/Report_Submission_of_Early_Parkinsons_Disease_Detection.pdf"
@@ -134,6 +146,7 @@ academic_project:
         Implemented Logistic Regression, Boosted Tree, and SVM classifiers via MATLAB Classification Learner, achieving near-matching results.
 
     - type: id_load_flow
+      tag: software
       project_name: "Load-Flow Analysis Tool"
       project_excerpt: "MATLAB GUI tool for power grid bus analysis up to 100 nodes"
       img: ":load_flow.webp"
