@@ -45,6 +45,15 @@ page_data:
 
   list:
     - type: id_dai
+      title: Distributed Persistence Domain for Persistent Memory Pooling
+      authors: Khan Shaikhul Hadi, Andres David Delgado, Naveed Ul Mustafa, Mark Heinrich, Hao Zheng, Yan Solihin
+      conference: [arxiv]
+      year: 2026
+      url: https://arxiv.org/abs/2606.07159
+      summary: In this paper, we propose Distributed Persistence Domain (DPD), a new abstraction for persistent memory pooling that enables persistence support at the CXL switch level. Based on our DPD framework and correctness requirement analysis, we present persistent CXL Switch, a CXL switch architecture with correctness and crash conssitency guaratee for DPD. 
+
+
+    - type: id_dai
       title: Hardware Support for Durable Atomic Instructions for Persistent Parallel Programming 
       authors: Khan Shaikhul Hadi, Naveed Ul Mustafa, Mark Heinrich, Yan Solihin
       conference: DAC
