@@ -18,12 +18,10 @@ main.yml
     - updates : _data/content/updates/en.yml
     
 /////////////////////////////////////
-Description(_includes/home/short_introduction.html)
+
 //////////////////////////////////////
-
-
-////////////////////////////////////////
-Update Publication ( publication.md)
+Update Publication ( tabs/publication.md)
+Update List ( _data/content/updates/en.yml)
 ////////////////////////////////////
 
 Follow list format to add: type, title, authors, conference,year,url, summary

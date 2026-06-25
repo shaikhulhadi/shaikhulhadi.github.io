@@ -38,9 +38,13 @@ items:
   #   text: "Invited talk at UCF Systems Seminar on disaggregated persistent memory"
 # --- milestone example ---
 
+  - date: "Jun 2026"
+    type: "milestone"
+    text: "Successfully defended my PhD Dissertation at the University of Central Florida"
+
   - date: "Feb 2026"
     type: "milestone"
-    text: "Defended PhD thesis proposal at the University of Central Florida"
+    text: "Defended PhD dissertation proposal at the University of Central Florida"
 
   - date: "Dec 2024"
     type: "milestone"
